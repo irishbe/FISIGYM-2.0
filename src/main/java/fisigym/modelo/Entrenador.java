@@ -9,9 +9,6 @@ public class Entrenador extends Usuario{
     public Entrenador() {
     }
     
-    public void gestionarEntrenador(){
-    }
-    
     // Getters y setters
 
     public String getRuc() {

@@ -6,9 +6,6 @@ public class Administrador extends Usuario{
     public Administrador() {
     }
     
-    public void gestionarAdministradores(){
-    }
-    
     // Getters y setters
 
     public String getRuc() {

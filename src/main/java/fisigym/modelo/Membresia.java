@@ -7,22 +7,21 @@ public class Membresia {
     private String estado;
     private Date fechaInicio;
     private Date fechaFinal;
-    private int diasRestantes;
     
     public Membresia() {
     }
     
-    public void adquirirMembresia(Cliente cliente){
+    public void adquirirMembresia(){
         
     }
-    public void renovarMembresia(int idCliente){
+    public void renovarMembresia(){
         
     }
-    public void reembolsarMembresia(int idCliente){
+    public void reembolsarMembresia(){
         
     }
 
-    public void calcularDiasRestantes(int idCliente){
+    public void calcularDiasRestantes(){
         
     }
     
@@ -58,13 +57,5 @@ public class Membresia {
 
     public void setFechaFinal(Date fechaFinal) {
         this.fechaFinal = fechaFinal;
-    }
-
-    public int getDiasRestantes() {
-        return diasRestantes;
-    }
-
-    public void setDiasRestantes(int diasRestantes) {
-        this.diasRestantes = diasRestantes;
     }
 }

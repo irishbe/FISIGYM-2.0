@@ -1,7 +1,6 @@
 package fisigym.modelo;
 
 public class Reserva {
-    private boolean asistencia;
     private boolean inscrito;
 
     public Reserva() {
@@ -18,14 +17,6 @@ public class Reserva {
     }
     
     // Getters y setters
-
-    public boolean isAsistencia() {
-        return asistencia;
-    }
-
-    public void setAsistencia(boolean asistencia) {
-        this.asistencia = asistencia;
-    }
 
     public boolean isInscrito() {
         return inscrito;

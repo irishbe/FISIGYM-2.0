@@ -5,6 +5,7 @@ import java.util.Date;
 
 public class Taller {
     private int idTaller;
+    private boolean tallerEspecial;
     private String zonaGimnasio;
     private int aforo;
     private int cupos;
@@ -12,6 +13,7 @@ public class Taller {
     private Date fechaFinal;
     private Time horaInicio;
     private Time horaFinal;
+    private boolean tallerActivo;
 
     public Taller() {
     }
@@ -28,6 +30,14 @@ public class Taller {
 
     public void setIdTaller(int idTaller) {
         this.idTaller = idTaller;
+    }
+
+    public boolean isTallerEspecial() {
+        return tallerEspecial;
+    }
+
+    public void setTallerEspecial(boolean tallerEspecial) {
+        this.tallerEspecial = tallerEspecial;
     }
 
     public String getZonaGimnasio() {
@@ -84,5 +94,13 @@ public class Taller {
 
     public void setHoraFinal(Time horaFinal) {
         this.horaFinal = horaFinal;
+    }
+
+    public boolean isTallerActivo() {
+        return tallerActivo;
+    }
+
+    public void setTallerActivo(boolean tallerActivo) {
+        this.tallerActivo = tallerActivo;
     }
 }

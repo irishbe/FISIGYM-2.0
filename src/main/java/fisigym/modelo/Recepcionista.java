@@ -6,14 +6,6 @@ public class Recepcionista extends Usuario{
     public Recepcionista() {
     }
     
-    public void buscarCliente(){
-        
-    }
-    
-    public void verificarAsistencia(){
-        
-    }
-    
     // Getters y setters
 
     public String getRuc() {
