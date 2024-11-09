@@ -9,13 +9,6 @@ on:
 
 jobs:
   build:
-    env:
-      DB_NAME: ${{ secrets.MYSQLDATABASE }}
-      DB_HOST: ${{ secrets.MYSQLHOST }}
-      DB_PORT: ${{ secrets.MYSQLPORT }}
-      DB_USER: ${{ secrets.MYSQLUSER }}
-      DB_PASSWORD: ${{ secrets.MYSQLPASSWORD }}
-      DB_URL: ${{ secrets.MYSQL_PUBLIC_URL }}
 
     runs-on: ubuntu-latest
     permissions:
@@ -39,3 +32,22 @@ jobs:
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
       env:
         GITHUB_TOKEN: ${{ github.token }}
+
+    - name: Run the application
+      run: java -jar target/fisigym.jar
+      env:
+        DB_NAME: ${{ secrets.MYSQLDATABASE }}
+        DB_HOST: ${{ secrets.MYSQLHOST }}
+        DB_PORT: ${{ secrets.MYSQLPORT }}
+        DB_USER: ${{ secrets.MYSQLUSER }}
+        DB_PASSWORD: ${{ secrets.MYSQLPASSWORD }}
+        DB_URL: ${{ secrets.MYSQL_URL }}
+
+    - name: Debug environment variables
+      run: |
+        echo "DB_NAME: $DB_NAME"
+        echo "DB_HOST: $DB_HOST"
+        echo "DB_PORT: $DB_PORT"
+        echo "DB_USER: $DB_USER"
+        echo "DB_PASSWORD: $DB_PASSWORD"
+        echo "DB_URL: $DB_URL"
