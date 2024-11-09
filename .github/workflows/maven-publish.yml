@@ -9,6 +9,13 @@ on:
 
 jobs:
   build:
+    env:
+      DB_NAME: ${{secrets.MYSQLDATABASE}}
+      DB_HOST: ${{secrets.MYSQLHOST}}
+      DB_PORT: ${{secrets.MYSQLPORT}}
+      DB_USER: ${{secrets.MYSQLUSER}}
+      DB_PASSWORD: ${{secrets.MYSQLPASSWORD}}
+      DB_URL: ${{secrets.MYSQL_PUBLIC_URL}}
 
     runs-on: ubuntu-latest
     permissions:
