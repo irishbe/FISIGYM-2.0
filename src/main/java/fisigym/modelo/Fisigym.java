@@ -1,18 +1,14 @@
 package fisigym.modelo;
+import fisigym.dao.DBConexion;
 
 public class Fisigym {
-
-    /*public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }*/
-
     public static void main(String[] args) {
-        String dbPassword = System.getenv("DB_PASSWORD");
+        System.out.println("Hello World!");
 
-        if (dbPassword == null) {
-            System.out.println("La variable DB_PASSWORD no está configurada.");
+        if(DBConexion.getConnection() != null){
+            System.out.println("BIEN");
         } else {
-            System.out.println("La contraseña de la base de datos es: " + dbPassword);
+            System.out.println("NOOOOOOOOOOOOOOOOOO");
         }
     }
 }
