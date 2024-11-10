@@ -88,15 +88,15 @@ public class RegistroClienteCtrl implements ActionListener{
         cliente.setTelefono(registroUsuario.txtTelefonoCliente.getText());
         
         // Intenta registrar el usuario en la base de datos
-        if (ClienteDAO.registrarCliente(cliente)) {            
-            irEscogerMembresia();
-        this.registroUsuario.dispose();
-            /*JOptionPane.showMessageDialog(
+        if (ClienteDAO.registrarCliente(cliente)) {
+            
+           
+            JOptionPane.showMessageDialog(
                 registroUsuario, 
                 "Usuario registrado exitosamente.", 
                 "Éxito", 
                 JOptionPane.INFORMATION_MESSAGE
-            );*/
+            );
             
             //limpiarFormulario();
             
