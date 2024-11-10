@@ -79,13 +79,13 @@ public class PlanesCliente extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(242, 232, 242));
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/DiamanteLogo.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/DiamanteLogo.png"))); // NOI18N
 
         jLabel5.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 18)); // NOI18N
         jLabel5.setText("DIAMANTE");
 
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/memDiamante.png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/memDiamante.png"))); // NOI18N
 
         jPanel5.setBackground(new java.awt.Color(105, 131, 219));
 
@@ -122,9 +122,6 @@ public class PlanesCliente extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(37, 37, 37)
                         .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -135,8 +132,11 @@ public class PlanesCliente extends javax.swing.JFrame {
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(40, 40, 40)
-                        .addComponent(jLabel5)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jLabel5))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -145,9 +145,9 @@ public class PlanesCliente extends javax.swing.JFrame {
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(12, 12, 12)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel14)
@@ -159,14 +159,14 @@ public class PlanesCliente extends javax.swing.JFrame {
         jPanel2.setPreferredSize(new java.awt.Dimension(200, 310));
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Zafiro.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/Zafiro.png"))); // NOI18N
         jLabel2.setMaximumSize(new java.awt.Dimension(40, 16));
         jLabel2.setPreferredSize(new java.awt.Dimension(40, 40));
 
         jLabel6.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         jLabel6.setText("ZAFIRO");
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/memZafiro.png"))); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/memZafiro.png"))); // NOI18N
 
         jPanel6.setBackground(new java.awt.Color(105, 131, 219));
         jPanel6.setPreferredSize(new java.awt.Dimension(116, 37));
@@ -240,13 +240,13 @@ public class PlanesCliente extends javax.swing.JFrame {
         jPanel3.setPreferredSize(new java.awt.Dimension(200, 310));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/esmeralda.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/esmeralda.png"))); // NOI18N
         jLabel3.setPreferredSize(new java.awt.Dimension(40, 40));
 
         jLabel7.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         jLabel7.setText("ESMERALDA");
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/memEsmeralda.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/memEsmeralda.png"))); // NOI18N
 
         jPanel7.setBackground(new java.awt.Color(105, 131, 219));
         jPanel7.setPreferredSize(new java.awt.Dimension(116, 37));
