@@ -118,13 +118,69 @@ public class UsuarioDAO {
         return -1;
     }
 
-    public void actualizarUsuario(){
+    public static boolean actualizarUsuario(Usuario usuario) {
+        String sql = "UPDATE railway.usuarios SET rol = ?, correo = ?, nombres = ?, apellidos = ?, telefono = ? WHERE idUsuario = ?";
+        
+        Connection conexion = null;
+        PreparedStatement statement = null;
+        
+        try {
+            conexion = DBConexion.getConnection();
+            if (conexion == null) return false;
 
+            statement = conexion.prepareStatement(sql);
+            statement.setString(1, usuario.getRol());
+            statement.setString(2, usuario.getCorreo());
+            statement.setString(3, usuario.getNombres());
+            statement.setString(4, usuario.getApellidos());
+            statement.setString(5, usuario.getTelefono());
+            statement.setInt(6, usuario.getIdUsuario()); // Identifica al usuario
+
+            return statement.executeUpdate() > 0;
+
+        } catch (SQLException e) {
+            System.out.println("Error al actualizar el usuario: " + e.toString());
+        } finally {
+            try {
+                if (statement != null) statement.close();
+                if (conexion != null) DBConexion.closeConnection(conexion);
+            } catch (SQLException e) {
+                System.out.println("Error al cerrar los recursos: " + e.toString());
+            }
+        }
+        
+        return false;
     }
 
-    public void eliminarUsuario(){
+    
+    public static boolean eliminarUsuario(int idUsuario) {
+        String sql = "UPDATE railway.usuarios SET usuarioActivo = ? WHERE idUsuario = ?";
+        
+        Connection conexion = null;
+        PreparedStatement statement = null;
+        
+        try {
+            conexion = DBConexion.getConnection();
+            if (conexion == null) return false;
 
+            statement = conexion.prepareStatement(sql);
+            statement.setBoolean(1, false); // Marcar como inactivo
+            statement.setInt(2, idUsuario);
+
+            return statement.executeUpdate() > 0;
+
+        } catch (SQLException e) {
+            System.out.println("Error al desactivar el usuario: " + e.toString());
+        } finally {
+            try {
+                if (statement != null) statement.close();
+                if (conexion != null) DBConexion.closeConnection(conexion);
+            } catch (SQLException e) {
+                System.out.println("Error al cerrar los recursos: " + e.toString());
+            }
+        }
+        
+        return false;
     }
     
-
 }

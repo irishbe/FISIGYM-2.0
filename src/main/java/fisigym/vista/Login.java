@@ -94,6 +94,11 @@ public class Login extends javax.swing.JFrame {
         buttonRegistrarse.setForeground(new java.awt.Color(118, 149, 255));
         buttonRegistrarse.setText("¿Aún no eres miembro? Registrarse");
         buttonRegistrarse.setBorder(null);
+        buttonRegistrarse.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonRegistrarseActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -139,7 +144,7 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(buttonIniciarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(buttonRegistrarse)
-                .addContainerGap(103, Short.MAX_VALUE))
+                .addContainerGap(101, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -193,6 +198,10 @@ public class Login extends javax.swing.JFrame {
     private void txtPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPassActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPassActionPerformed
+
+    private void buttonRegistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonRegistrarseActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonRegistrarseActionPerformed
 
     /**
      * @param args the command line arguments

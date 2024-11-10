@@ -66,7 +66,7 @@ public class LoginCtrl implements ActionListener{
         if ( usuario != null ) {
             
             JOptionPane.showMessageDialog(login, 
-                "Usuario registrado exitosamente.", 
+                "Usuario logueado exitosamente.", 
                 "Éxito", 
                 JOptionPane.INFORMATION_MESSAGE
             );

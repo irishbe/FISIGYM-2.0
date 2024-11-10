@@ -91,6 +91,11 @@ public class RegistroCliente extends javax.swing.JFrame {
         volverLogin.setText("¿Ya eres miembro? Iniciar sesión");
         volverLogin.setToolTipText("");
         volverLogin.setBorder(null);
+        volverLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                volverLoginActionPerformed(evt);
+            }
+        });
 
         buttonUnirseCliente.setBackground(new java.awt.Color(105, 131, 219));
         buttonUnirseCliente.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
@@ -143,8 +148,7 @@ public class RegistroCliente extends javax.swing.JFrame {
                                     .addComponent(volverLogin)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGap(27, 27, 27)
-                                        .addComponent(buttonUnirseCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 203, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                        .addComponent(buttonUnirseCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(23, 23, 23)
                         .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -213,6 +217,10 @@ public class RegistroCliente extends javax.swing.JFrame {
     private void buttonUnirseClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonUnirseClienteActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_buttonUnirseClienteActionPerformed
+
+    private void volverLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_volverLoginActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverLoginActionPerformed
 
     /**
      * @param args the command line arguments

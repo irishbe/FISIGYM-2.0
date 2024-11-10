@@ -69,7 +69,7 @@ public class RegistroClienteCtrl implements ActionListener{
         // Intenta registrar el usuario en la base de datos
         if (ClienteDAO.registrarCliente(cliente)) {
             
-            //-----------------------TIENE QUE SALIR EN UNA VENRTANA EMERGENTE------------------
+           
             JOptionPane.showMessageDialog(
                 registroUsuario, 
                 "Usuario registrado exitosamente.", 
