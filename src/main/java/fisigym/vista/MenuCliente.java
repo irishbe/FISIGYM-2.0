@@ -48,13 +48,13 @@ public class MenuCliente extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(153, 172, 255));
         jPanel1.setMinimumSize(new java.awt.Dimension(100, 500));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/LogoSistema.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/LogoSistema.png"))); // NOI18N
         jLabel1.setMaximumSize(new java.awt.Dimension(195, 95));
 
         InicioCliente.setBackground(new java.awt.Color(105, 131, 219));
         InicioCliente.setFont(new java.awt.Font("Yu Gothic UI", 1, 17)); // NOI18N
         InicioCliente.setForeground(new java.awt.Color(255, 255, 255));
-        InicioCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
+        InicioCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/InicioLogoCliente.png"))); // NOI18N
         InicioCliente.setText("Inicio");
         InicioCliente.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         InicioCliente.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -68,16 +68,21 @@ public class MenuCliente extends javax.swing.JFrame {
         TalleresCliente.setBackground(new java.awt.Color(105, 131, 219));
         TalleresCliente.setFont(new java.awt.Font("Yu Gothic UI", 1, 17)); // NOI18N
         TalleresCliente.setForeground(new java.awt.Color(255, 255, 255));
-        TalleresCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/IconoTalleresCliente.png"))); // NOI18N
+        TalleresCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/IconoTalleresCliente.png"))); // NOI18N
         TalleresCliente.setText("Talleres");
         TalleresCliente.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         TalleresCliente.setIconTextGap(18);
         TalleresCliente.setPreferredSize(new java.awt.Dimension(75, 34));
+        TalleresCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TalleresClienteActionPerformed(evt);
+            }
+        });
 
         jButton3.setBackground(new java.awt.Color(105, 131, 219));
         jButton3.setFont(new java.awt.Font("Yu Gothic UI", 1, 17)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/IconoServiciosCliente.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/IconoServiciosCliente.png"))); // NOI18N
         jButton3.setText("Mis servicios");
         jButton3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jButton3.setIconTextGap(7);
@@ -86,7 +91,7 @@ public class MenuCliente extends javax.swing.JFrame {
         jButton4.setBackground(new java.awt.Color(105, 131, 219));
         jButton4.setFont(new java.awt.Font("Yu Gothic UI", 1, 17)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/IconoPagarCliente.png"))); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/IconoPagarCliente.png"))); // NOI18N
         jButton4.setText("Pagar membresía");
         jButton4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jButton4.setIconTextGap(5);
@@ -95,7 +100,7 @@ public class MenuCliente extends javax.swing.JFrame {
         jButton5.setBackground(new java.awt.Color(105, 131, 219));
         jButton5.setFont(new java.awt.Font("Yu Gothic UI", 1, 17)); // NOI18N
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/IconoPerfilCliente.png"))); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/IconoPerfilCliente.png"))); // NOI18N
         jButton5.setText("Mi perfil");
         jButton5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jButton5.setIconTextGap(18);
@@ -104,7 +109,7 @@ public class MenuCliente extends javax.swing.JFrame {
         buttonCerrarSesion.setBackground(new java.awt.Color(105, 131, 219));
         buttonCerrarSesion.setFont(new java.awt.Font("Yu Gothic UI", 1, 17)); // NOI18N
         buttonCerrarSesion.setForeground(new java.awt.Color(255, 255, 255));
-        buttonCerrarSesion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/LogoutCliente.png"))); // NOI18N
+        buttonCerrarSesion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/LogoutCliente.png"))); // NOI18N
         buttonCerrarSesion.setText("Cerrar Sesión");
         buttonCerrarSesion.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         buttonCerrarSesion.setIconTextGap(18);
@@ -132,9 +137,9 @@ public class MenuCliente extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
+                .addGap(27, 27, 27)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(41, 41, 41)
+                .addGap(33, 33, 33)
                 .addComponent(InicioCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(TalleresCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -144,7 +149,7 @@ public class MenuCliente extends javax.swing.JFrame {
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(buttonCerrarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20))
         );
@@ -166,7 +171,7 @@ public class MenuCliente extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("tab1", jPanel2);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioCoraz[on.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/InicioCorazon.png"))); // NOI18N
         jLabel3.setMaximumSize(new java.awt.Dimension(40, 16));
         jLabel3.setPreferredSize(new java.awt.Dimension(40, 40));
 
@@ -240,10 +245,9 @@ public class MenuCliente extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40))
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 492, Short.MAX_VALUE)
         );
 
         pack();
@@ -252,6 +256,10 @@ public class MenuCliente extends javax.swing.JFrame {
     private void InicioClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InicioClienteActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_InicioClienteActionPerformed
+
+    private void TalleresClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TalleresClienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TalleresClienteActionPerformed
 
     /**
      * @param args the command line arguments

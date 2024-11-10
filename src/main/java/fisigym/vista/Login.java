@@ -49,7 +49,7 @@ public class Login extends javax.swing.JFrame {
         jPanel1.setMinimumSize(new java.awt.Dimension(800, 500));
         jPanel1.setPreferredSize(new java.awt.Dimension(800, 500));
 
-        clienteLoginImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/loginImagen.png"))); // NOI18N
+        clienteLoginImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/loginImagen.png"))); // NOI18N
 
         jPanel2.setBackground(new java.awt.Color(251, 251, 251));
         jPanel2.setPreferredSize(new java.awt.Dimension(400, 500));
