@@ -2,8 +2,9 @@ package fisigym.modelo;
 
 public class Usuario {
     private int idUsuario;
+    private int idGimnasio;
     private String rol;
-    private int dni;
+    private String dni;
     private String correo;
     private String contraseña;
     private String nombres;
@@ -11,30 +12,33 @@ public class Usuario {
     private String telefono;
     private boolean usuarioActivo;
 
-    public Usuario() {
-    }
-    
-    public void iniciarSesion(){
-        
-    }
-    public void registrarUsuario(){
-        
-    }
-    public void actualizarUsuario(){
-        
-    }
-    public void eliminarUsuario(){
-        
-    }
+    public Usuario(){};
 
-    // Getters y setters
+    public Usuario(String rol, String dni, String correo, String contraseña, String nombres, String apellidos, String telefono) {
+        this.rol = rol;
+        this.dni = dni;
+        this.correo = correo;
+        this.contraseña = contraseña;
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+        this.telefono = telefono;
+    }
     
+    // Getters y setters
     public int getIdUsuario() {
         return idUsuario;
     }
 
     public void setIdUsuario(int idUsuario) {
         this.idUsuario = idUsuario;
+    }
+
+    public int getIdGimnasio() {
+        return idGimnasio;
+    }
+
+    public void setIdGimnasio(int idGimnasio) {
+        this.idGimnasio = idGimnasio;
     }
 
     public String getRol() {
@@ -45,11 +49,11 @@ public class Usuario {
         this.rol = rol;
     }
 
-    public int getDni() {
+    public String getDni() {
         return dni;
     }
 
-    public void setDni(int dni) {
+    public void setDni(String dni) {
         this.dni = dni;
     }
 
@@ -99,5 +103,19 @@ public class Usuario {
 
     public void setUsuarioActivo(boolean usuarioActivo) {
         this.usuarioActivo = usuarioActivo;
+    }
+
+    @Override
+    public String toString() {
+        return "Usuario {" +
+               "\n  ID Usuario: " + idUsuario +
+               "\n  ID Gimnasio: " + idGimnasio +
+               "\n  Rol: " + rol +
+               "\n  DNI: " + dni +
+               "\n  Correo: " + correo +
+               "\n  Nombres: " + nombres +
+               "\n  Apellidos: " + apellidos +
+               "\n  Teléfono: " + telefono +
+               "\n}";
     }
 }
