@@ -13,12 +13,15 @@ public class Usuario {
     private boolean usuarioActivo;
 
     public Usuario(){};
+    
+    public Usuario(String rol){
+        this.rol = rol;
+    }
 
-    public Usuario(String rol, String dni, String correo, String contraseña, String nombres, String apellidos, String telefono) {
+    public Usuario(String rol, String dni, String correo, String nombres, String apellidos, String telefono) {
         this.rol = rol;
         this.dni = dni;
         this.correo = correo;
-        this.contraseña = contraseña;
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.telefono = telefono;

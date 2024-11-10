@@ -1,43 +1,18 @@
 package fisigym.modelo;
 
-import fisigym.controlador.LoginUsuarioController;
-import fisigym.controlador.RegistroUsuarioController;
-import fisigym.dao.ClienteDAO;
-import fisigym.dao.DBConexion;
-import fisigym.dao.UsuarioDAO;
-import fisigym.vista.LoginCliente;
-import fisigym.vista.RegistroUsuario;
-
+import fisigym.controlador.LoginCtrl;
+import fisigym.vista.Login;
+import fisigym.vista.RegistroCliente;
+//import fisigym.dao.DBConexion;
 public class Fisigym {
     public static void main(String[] args) {
+        Usuario usuario = new Usuario();
         
-        System.out.println("Hello World!");
-
+        // Instanciando las vistas
+        Login login = new Login();
+        RegistroCliente registroUsuario = new RegistroCliente();
         
-
-        
-
-        
-        
-        if(DBConexion.getConnection() != null){
-            System.out.println("BIEN");
-        } else {
-            System.out.println("NOOO");
-        }
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        LoginCliente login = new LoginCliente();
-        RegistroUsuario registroUsuario = new RegistroUsuario();
-        RegistroUsuarioController registroUsuarioController = new RegistroUsuarioController(registroUsuario);
-        LoginUsuarioController loginUsuarioController = new LoginUsuarioController(login,usuarioDAO);
-        registroUsuario.setVisible(true);
-        login.setVisible(true);
-        
-        
-        /*if ( ClienteDAO.registrarCliente(cliente) ){
-            System.out.println( "Registro con exito!");
-        }else{
-            System.out.println("pipipi");
-        }*/
-
+        // Utilizando los controladores
+        var loginControlador = new LoginCtrl( login, usuario);
     }
 }
