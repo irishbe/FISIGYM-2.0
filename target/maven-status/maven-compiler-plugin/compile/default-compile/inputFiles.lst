@@ -1,5 +1,7 @@
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Distrito.java
+C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\vista\ClasesCliente.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Servicio.java
+C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\vista\ReservarTaller.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\TipoMembresiaDAO.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\UsuarioDAO.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\GimnasioDAO.java
@@ -22,8 +24,10 @@ C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Gimnasio_Servicio.
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\ReservaDAO.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Membresia.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\Gimnasio_ServicioDAO.java
+C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\vista\RealizarPago.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Ciudad.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Taller.java
+C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\vista\SedesLogin.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\TallerDAO.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\Fisigym.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\vista\SistemaCliente.java
