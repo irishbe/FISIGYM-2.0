@@ -3,6 +3,7 @@ package fisigym.modelo;
 public class Ciudad {
     private int idCiudad;
     private String nombre;
+    private boolean ciudadActiva;
 
     public Ciudad() {
     }
@@ -27,4 +28,13 @@ public class Ciudad {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+    public boolean isCiudadActiva() {
+        return ciudadActiva;
+    }
+
+    public void setCiudadActiva(boolean ciudadActiva) {
+        this.ciudadActiva = ciudadActiva;
+    }
+    
 }
