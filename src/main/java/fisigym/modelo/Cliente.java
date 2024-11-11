@@ -7,7 +7,7 @@ public class Cliente extends Usuario{
     }
 
     public Cliente(Usuario u){
-        super("Cliente", u.getDni(), u.getCorreo(), u.getNombres(), u.getApellidos(), u.getTelefono() );
+        super( u.getRol() , u.getDni(), u.getCorreo(), u.getNombres(), u.getApellidos(), u.getTelefono() );
     }
     
     public Cliente(String dni, String correo, String nombres, String apellidos, String telefono) {

@@ -8,9 +8,9 @@ C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\GimnasioDAO.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\AdministradorDAO.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\MetodoPago.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\vista\Login.java
+C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\vista\MenuAdministrador.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Especializacion.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\controlador\RegistroClienteCtrl.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\vista\Sistema.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Asistencia.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\DistritoDAO.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Reserva.java
@@ -19,6 +19,7 @@ C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\vista\MenuCliente.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\RecepcionistaDAO.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\vista\RegistroCliente.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\AsistenciaDAO.java
+C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\controlador\PlanesClienteCtrl.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Disciplina.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Gimnasio_Servicio.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\ReservaDAO.java
@@ -44,7 +45,6 @@ C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\EntrenadorDAO.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Administrador.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Cliente.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\controlador\LoginCtrl.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\vista\SistemaAdmin.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\MembresiaDAO.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\DisciplinaDAO.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\DBConexion.java
@@ -52,4 +52,5 @@ C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Recepcionista.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\CiudadDAO.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Factura.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\FacturaDAO.java
+C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\controlador\SedesLoginCtrl.java
 C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\ServicioDAO.java

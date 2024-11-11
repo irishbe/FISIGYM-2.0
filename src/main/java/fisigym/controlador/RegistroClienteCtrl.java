@@ -6,6 +6,8 @@ import fisigym.vista.RegistroCliente;
 import fisigym.modelo.Cliente;
 import fisigym.modelo.Usuario;
 import fisigym.vista.Login;
+import fisigym.vista.PlanesCliente;
+import fisigym.vista.SedesLogin;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -21,7 +23,7 @@ public class RegistroClienteCtrl implements ActionListener{
         
         this.registroUsuario.buttonUnirseCliente.addActionListener(this);
         this.registroUsuario.volverLogin.addActionListener(this);
-        
+        this.registroUsuario.buttonSeleccionarSede.addActionListener(this);
         this.registroUsuario.setVisible(true);
     }
 
@@ -34,6 +36,10 @@ public class RegistroClienteCtrl implements ActionListener{
         if( e.getSource()== registroUsuario.volverLogin ){
             irLogin();
         }
+        
+        if(e.getSource()==registroUsuario.buttonSeleccionarSede){
+            irEscogerSede();
+        }
     }
     
     private void irLogin(){
@@ -43,6 +49,21 @@ public class RegistroClienteCtrl implements ActionListener{
         var loginCtrl = new LoginCtrl( login, usuario);
         
         this.registroUsuario.dispose();
+    }
+    
+    private void irEscogerSede(){
+        var sedesLogin = new SedesLogin();
+        var cliente = new Cliente();
+        
+        var sedesLoginCtrl = new SedesLoginCtrl( sedesLogin, cliente);
+        
+    }
+    private void irEscogerMembresia(){
+        var planesCliente = new PlanesCliente();
+        var cliente = new Cliente();
+        
+        var planesClienteCtrl = new PlanesClienteCtrl( planesCliente, cliente);
+        
     }
     
     private void registrarNuevoUsuario() {
@@ -65,19 +86,19 @@ public class RegistroClienteCtrl implements ActionListener{
         cliente.setNombres(registroUsuario.txtNombreCliente.getText());
         cliente.setApellidos(registroUsuario.txtApellidoCliente.getText());
         cliente.setTelefono(registroUsuario.txtTelefonoCliente.getText());
-
+        
         // Intenta registrar el usuario en la base de datos
-        if (ClienteDAO.registrarCliente(cliente)) {
-            
-            //-----------------------TIENE QUE SALIR EN UNA VENRTANA EMERGENTE------------------
-            JOptionPane.showMessageDialog(
+        if (ClienteDAO.registrarCliente(cliente)) {            
+            irEscogerMembresia();
+        this.registroUsuario.dispose();
+            /*JOptionPane.showMessageDialog(
                 registroUsuario, 
                 "Usuario registrado exitosamente.", 
                 "Éxito", 
                 JOptionPane.INFORMATION_MESSAGE
-            );
+            );*/
             
-            limpiarFormulario();
+            //limpiarFormulario();
             
         }else {
             JOptionPane.showMessageDialog(
