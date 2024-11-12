@@ -1,56 +1,55 @@
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Distrito.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\vista\ClasesCliente.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Servicio.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\vista\ReservarTaller.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\TipoMembresiaDAO.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\UsuarioDAO.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\GimnasioDAO.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\AdministradorDAO.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\MetodoPago.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\vista\Login.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\vista\MenuAdministrador.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Especializacion.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\controlador\RegistroClienteCtrl.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Asistencia.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\DistritoDAO.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Reserva.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Usuario.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\vista\MenuCliente.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\RecepcionistaDAO.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\vista\RegistroCliente.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\AsistenciaDAO.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\controlador\PlanesClienteCtrl.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Disciplina.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Gimnasio_Servicio.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\ReservaDAO.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Membresia.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\Gimnasio_ServicioDAO.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\vista\RealizarPago.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Ciudad.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Taller.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\vista\SedesLogin.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\TallerDAO.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\Fisigym.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\vista\SistemaCliente.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Fisigym.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Entrenador.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Gimnasio.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\EspecializacionDAO.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\MetodoPagoDAO.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\ClienteDAO.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\controlador\MenuClienteCtrl.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\vista\PlanesCliente.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\TipoMembresia.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\EntrenadorDAO.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Administrador.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Cliente.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\controlador\LoginCtrl.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\MembresiaDAO.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\DisciplinaDAO.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\DBConexion.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Recepcionista.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\CiudadDAO.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\modelo\Factura.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\FacturaDAO.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\controlador\SedesLoginCtrl.java
-C:\Users\MSI\Desktop\FISIGYM-2.0\src\main\java\fisigym\dao\ServicioDAO.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\modelo\MetodoPago.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\modelo\Gimnasio.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\dao\FacturaDAO.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\dao\AsistenciaDAO.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\dao\DisciplinaDAO.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\dao\ClienteDAO.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\modelo\Asistencia.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\modelo\TipoMembresia.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\dao\Gimnasio_ServicioDAO.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\dao\RecepcionistaDAO.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\modelo\Fisigym.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\vista\RealizarPago.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\dao\EntrenadorDAO.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\vista\SedesLogin.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\modelo\Usuario.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\modelo\Gimnasio_Servicio.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\modelo\Disciplina.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\modelo\Especializacion.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\vista\MenuCliente.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\dao\ServicioDAO.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\dao\CiudadDAO.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\dao\TipoMembresiaDAO.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\vista\RegistroCliente.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\dao\EspecializacionDAO.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\vista\ReservarTaller.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\modelo\Membresia.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\dao\MetodoPagoDAO.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\dao\AdministradorDAO.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\dao\ReservaDAO.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\dao\UsuarioDAO.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\controlador\RegistroClienteCtrl.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\vista\Login.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\dao\GimnasioDAO.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\modelo\Distrito.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\controlador\LoginCtrl.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\modelo\Servicio.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\vista\Sistema.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\modelo\Reserva.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\vista\SistemaAdmin.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\modelo\Cliente.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\vista\ClasesCliente.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\dao\TallerDAO.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\modelo\Ciudad.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\modelo\Administrador.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\dao\DBConexion.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\modelo\Factura.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\modelo\Entrenador.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\modelo\Recepcionista.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\vista\PlanesCliente.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\dao\DistritoDAO.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\vista\SistemaCliente.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\modelo\Taller.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\Fisigym.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\controlador\MenuClienteCtrl.java
+C:\Users\Kevin\Documents\NetBeansProjects\Fisigym - Vista ver 4\FISIGYM-2.0\src\main\java\fisigym\dao\MembresiaDAO.java

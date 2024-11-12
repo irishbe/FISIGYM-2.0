@@ -28,13 +28,12 @@ public class Ciudad {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
-    public boolean isCiudadActiva() {
+    
+    public boolean getCiudadActiva(){
         return ciudadActiva;
     }
-
-    public void setCiudadActiva(boolean ciudadActiva) {
-        this.ciudadActiva = ciudadActiva;
-    }
     
+    public void setCiudadActiva(boolean ciudadActiva){
+        this.ciudadActiva= ciudadActiva;
+    }
 }

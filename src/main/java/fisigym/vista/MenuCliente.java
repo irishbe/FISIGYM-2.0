@@ -449,7 +449,7 @@ public class MenuCliente extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel22, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE))
+                    .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 98, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel10Layout.setVerticalGroup(
@@ -490,7 +490,7 @@ public class MenuCliente extends javax.swing.JFrame {
                 .addComponent(jLabel12)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel13)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(14, 14, 14))
         );
@@ -639,7 +639,7 @@ public class MenuCliente extends javax.swing.JFrame {
                         .addGroup(jPanel9Layout.createSequentialGroup()
                             .addGap(50, 50, 50)
                             .addComponent(jLabel20))))
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(11, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

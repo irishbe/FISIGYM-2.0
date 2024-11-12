@@ -1,12 +1,12 @@
 package fisigym.modelo;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Membresia {
     private int idMembresia;
     private String estado;
-    private Date fechaInicio;
-    private Date fechaFinal;
+    private LocalDate fechaInicio;
+    private LocalDate fechaFinal;
     
     public Membresia() {
     }
@@ -43,19 +43,19 @@ public class Membresia {
         this.estado = estado;
     }
 
-    public Date getFechaInicio() {
+    public LocalDate getFechaInicio() {
         return fechaInicio;
     }
 
-    public void setFechaInicio(Date fechaInicio) {
+    public void setFechaInicio(LocalDate fechaInicio) {
         this.fechaInicio = fechaInicio;
     }
 
-    public Date getFechaFinal() {
+    public LocalDate getFechaFinal() {
         return fechaFinal;
     }
 
-    public void setFechaFinal(Date fechaFinal) {
+    public void setFechaFinal(LocalDate fechaFinal) {
         this.fechaFinal = fechaFinal;
     }
 }

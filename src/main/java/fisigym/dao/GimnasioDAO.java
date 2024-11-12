@@ -5,9 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import fisigym.modelo.Gimnasio;
-import java.util.ArrayList;
-import java.sql.ResultSet;
-
 
 public class GimnasioDAO {
 
@@ -122,47 +119,5 @@ public class GimnasioDAO {
         }
 
         return false;
-    }
-    
-    public static ArrayList<Gimnasio> obtenerGimnasios() {
-        ArrayList<Gimnasio> gimnasios = new ArrayList<>();
-        Connection conexion = null;
-        PreparedStatement statement = null;
-        ResultSet rs = null;
-
-        try {
-            conexion = DBConexion.getConnection();
-            String sql = "SELECT * FROM gimnasios";
-
-            if (conexion == null) return null;
-
-            statement = conexion.prepareStatement(sql);
-
-            // Ejecutando la consulta
-            rs = statement.executeQuery();
-
-            while (rs.next()) {
-                Gimnasio gimnasio = new Gimnasio();
-                gimnasio.setIdGimnasio(rs.getInt("idGimnasio"));
-                gimnasio.setDireccion(rs.getString("direccion"));
-                gimnasio.setReferencia(rs.getString("referencia"));
-
-                gimnasios.add(gimnasio);
-            }
-
-        } catch (SQLException e) {
-            System.out.println(e.toString());
-        } finally {
-            // Cerramos recursos
-            try {
-                if (rs != null) rs.close();
-                if (statement != null) statement.close();
-                if (conexion != null) DBConexion.closeConnection(conexion);
-            } catch (SQLException e) {
-                System.out.println(e.toString());
-            }
-        }
-
-        return gimnasios;
     }
 }

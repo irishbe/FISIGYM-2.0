@@ -1,11 +1,9 @@
 package fisigym.controlador;
 
 import fisigym.dao.UsuarioDAO;
-import fisigym.modelo.Administrador;
 import fisigym.modelo.Usuario;
 import fisigym.modelo.Cliente;
 import fisigym.vista.Login;
-import fisigym.vista.MenuAdministrador;
 import fisigym.vista.RegistroCliente;
 import fisigym.vista.MenuCliente;
 
@@ -40,18 +38,10 @@ public class LoginCtrl implements ActionListener{
         }
     }
     
-    private void irMenuCliente(Cliente cliente){
+    private void irPanelCliente(Cliente cliente){
         // Utilizando los controladores
         var menuCliente = new MenuCliente();
         var panelClienteCtrl = new MenuClienteCtrl(menuCliente, cliente);
-        
-        this.login.dispose();
-    }
-    
-    private void irMenuAdministrador(Administrador admin){
-        var menuAdministrador = new MenuAdministrador();
-        
-        menuAdministrador.setVisible(true);
         
         this.login.dispose();
     }
@@ -75,17 +65,13 @@ public class LoginCtrl implements ActionListener{
 
         if ( usuario != null ) {
             
-            
             JOptionPane.showMessageDialog(login, 
                 "Usuario logueado exitosamente.", 
                 "Éxito", 
                 JOptionPane.INFORMATION_MESSAGE
             );
             
-            switch( usuario.getRol() ){
-                case "Cliente" -> irMenuCliente( new Cliente(usuario) );
-                case "Administrador" -> irMenuAdministrador( new Administrador(usuario) );
-            }
+            irPanelCliente( new Cliente(usuario) );
 
         } else {
             JOptionPane.showMessageDialog(login, 

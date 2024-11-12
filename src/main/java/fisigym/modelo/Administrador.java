@@ -6,10 +6,6 @@ public class Administrador extends Usuario{
     public Administrador() {
     }
     
-    public Administrador(Usuario u){
-        super( u.getRol() , u.getDni(), u.getCorreo(), u.getNombres(), u.getApellidos(), u.getTelefono() );
-    }
-    
     // Getters y setters
 
     public String getRuc() {

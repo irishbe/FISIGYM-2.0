@@ -5,8 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import fisigym.modelo.Distrito;
-import java.util.ArrayList;
-import java.sql.ResultSet;
 
 public class DistritoDAO {
 
@@ -110,46 +108,5 @@ public class DistritoDAO {
         }
 
         return false;
-    }
-    
-    public static ArrayList<Distrito> obtenerDistritos() {
-        ArrayList<Distrito> distritos = new ArrayList<>();
-        Connection conexion = null;
-        PreparedStatement statement = null;
-        ResultSet rs = null;
-
-        try {
-            conexion = DBConexion.getConnection();
-            String sql = "SELECT * FROM distritos";
-
-            if (conexion == null) return null;
-
-            statement = conexion.prepareStatement(sql);
-
-            
-            rs = statement.executeQuery();
-
-            while (rs.next()) {
-                Distrito distrito = new Distrito();
-                distrito.setIdDistrito(rs.getInt("idDistrito"));
-                distrito.setNombre(rs.getString("nombre"));
-
-                distritos.add(distrito);
-            }
-
-        } catch (SQLException e) {
-            System.out.println(e.toString());
-        } finally {
-            // Cerramos recursos
-            try {
-                if (rs != null) rs.close();
-                if (statement != null) statement.close();
-                if (conexion != null) DBConexion.closeConnection(conexion);
-            } catch (SQLException e) {
-                System.out.println(e.toString());
-            }
-        }
-
-        return distritos;
     }
 }
