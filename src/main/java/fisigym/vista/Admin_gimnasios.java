@@ -61,7 +61,7 @@ public class Admin_gimnasios extends javax.swing.JFrame {
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/sedes3.png"))); // NOI18N
 
-        ConfirmarReserva.setText("Siguiente");
+        ConfirmarReserva.setText("Guardar");
 
         VolverReservaTaller.setText("Regresar");
 

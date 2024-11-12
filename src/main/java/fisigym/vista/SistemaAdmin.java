@@ -64,8 +64,9 @@ public class SistemaAdmin extends javax.swing.JFrame {
         jPanel8 = new javax.swing.JPanel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
         jButton17 = new javax.swing.JButton();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
@@ -136,7 +137,7 @@ public class SistemaAdmin extends javax.swing.JFrame {
         jButton10.setBackground(new java.awt.Color(189, 197, 200));
         jButton10.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
         jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
-        jButton10.setText("Registrar administrador");
+        jButton10.setText("Registrar entrenador");
         jButton10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jButton10.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jButton10.setIconTextGap(18);
@@ -149,7 +150,7 @@ public class SistemaAdmin extends javax.swing.JFrame {
         jButton11.setBackground(new java.awt.Color(189, 197, 200));
         jButton11.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
         jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
-        jButton11.setText("Registrar Sede");
+        jButton11.setText("Ver reportes");
         jButton11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jButton11.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jButton11.setIconTextGap(18);
@@ -414,13 +415,13 @@ public class SistemaAdmin extends javax.swing.JFrame {
         jTabbedPane1.addTab("Programar talleres", jPanel6);
 
         jLabel19.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
-        jLabel19.setText("Registrar administrador");
+        jLabel19.setText("Registrar emntrenador");
 
         jLabel20.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel20.setText("* Cambiar opciones de administrador");
+        jLabel20.setText("* Cambiar opciones de entrenador");
 
         jLabel21.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel21.setText("* Ver informacion de la cuenta");
+        jLabel21.setText("* Ver informacion de los entrenadores");
 
         jButton16.setText("Continuar");
 
@@ -441,7 +442,7 @@ public class SistemaAdmin extends javax.swing.JFrame {
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addGap(247, 247, 247)
                         .addComponent(jButton16)))
-                .addContainerGap(101, Short.MAX_VALUE))
+                .addContainerGap(114, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -457,18 +458,21 @@ public class SistemaAdmin extends javax.swing.JFrame {
                 .addContainerGap(111, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("Registrar administrador", jPanel7);
+        jTabbedPane1.addTab("Registrar entrenador", jPanel7);
 
         jLabel22.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
-        jLabel22.setText("Registrar sede");
+        jLabel22.setText("Ver reportes");
 
         jLabel23.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel23.setText("* Agregar una nueva sede");
-
-        jLabel24.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel24.setText("* Ver informacion de las sedes");
+        jLabel23.setText("* Reporte de entrenadores");
 
         jButton17.setText("Continuar");
+
+        jLabel27.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jLabel27.setText("* Reporte de sedes");
+
+        jLabel28.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jLabel28.setText("* Reporte de disciplinas mas solicitadas");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -477,33 +481,36 @@ public class SistemaAdmin extends javax.swing.JFrame {
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addGap(96, 96, 96)
+                        .addGap(247, 247, 247)
+                        .addComponent(jButton17))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(165, 165, 165)
                         .addComponent(jLabel22))
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addGap(79, 79, 79)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel24)
-                            .addComponent(jLabel23)))
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addGap(247, 247, 247)
-                        .addComponent(jButton17)))
-                .addContainerGap(239, Short.MAX_VALUE))
+                            .addComponent(jLabel27)
+                            .addComponent(jLabel23)
+                            .addComponent(jLabel28))))
+                .addContainerGap(173, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(56, 56, 56)
+                .addGap(50, 50, 50)
                 .addComponent(jLabel22)
-                .addGap(66, 66, 66)
+                .addGap(72, 72, 72)
                 .addComponent(jLabel23)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel24)
-                .addGap(94, 94, 94)
+                .addComponent(jLabel27)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel28)
+                .addGap(58, 58, 58)
                 .addComponent(jButton17)
                 .addContainerGap(111, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("Registrar Sede", jPanel8);
+        jTabbedPane1.addTab("Ver reportes", jPanel8);
 
         jLabel25.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
         jLabel25.setText("Ver clientes");
@@ -650,9 +657,10 @@ public class SistemaAdmin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
