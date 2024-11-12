@@ -5,8 +5,11 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import fisigym.modelo.Ciudad;
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.sql.ResultSet;
+=======
+>>>>>>> 0b2eb3e528544272cc6cee67bf2f5cd575087c84
 
 public class CiudadDAO {
 
@@ -27,8 +30,15 @@ public class CiudadDAO {
             
             statement = conexion.prepareStatement(sql);
 
+<<<<<<< HEAD
             statement.setString(1, ciudad.getNombre() );
             statement.setBoolean(2, ciudad.isCiudadActiva() );
+=======
+            
+            statement.setString(1, ciudad.getNombre());
+            statement.setBoolean(2, ciudad.getCiudadActiva());
+
+>>>>>>> 0b2eb3e528544272cc6cee67bf2f5cd575087c84
             
             return statement.executeUpdate() > 0;
 
@@ -109,6 +119,7 @@ public class CiudadDAO {
 
         return false;
     }
+<<<<<<< HEAD
     
     public static ArrayList<Ciudad> obtenerCiudades() {
         ArrayList<Ciudad> ciudades = new ArrayList<>();
@@ -150,4 +161,6 @@ public class CiudadDAO {
 
         return ciudades;
     }
+=======
+>>>>>>> 0b2eb3e528544272cc6cee67bf2f5cd575087c84
 }
