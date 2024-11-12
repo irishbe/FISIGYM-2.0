@@ -5,11 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import fisigym.modelo.Distrito;
-<<<<<<< HEAD
 import java.util.ArrayList;
 import java.sql.ResultSet;
-=======
->>>>>>> 0b2eb3e528544272cc6cee67bf2f5cd575087c84
 
 public class DistritoDAO {
 
@@ -114,7 +111,6 @@ public class DistritoDAO {
 
         return false;
     }
-<<<<<<< HEAD
     
     public static ArrayList<Distrito> obtenerDistritos() {
         ArrayList<Distrito> distritos = new ArrayList<>();
@@ -156,6 +152,4 @@ public class DistritoDAO {
 
         return distritos;
     }
-=======
->>>>>>> 0b2eb3e528544272cc6cee67bf2f5cd575087c84
 }

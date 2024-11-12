@@ -5,12 +5,9 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import fisigym.modelo.Gimnasio;
-<<<<<<< HEAD
 import java.util.ArrayList;
 import java.sql.ResultSet;
 
-=======
->>>>>>> 0b2eb3e528544272cc6cee67bf2f5cd575087c84
 
 public class GimnasioDAO {
 
@@ -126,7 +123,6 @@ public class GimnasioDAO {
 
         return false;
     }
-<<<<<<< HEAD
     
     public static ArrayList<Gimnasio> obtenerGimnasios() {
         ArrayList<Gimnasio> gimnasios = new ArrayList<>();
@@ -169,6 +165,4 @@ public class GimnasioDAO {
 
         return gimnasios;
     }
-=======
->>>>>>> 0b2eb3e528544272cc6cee67bf2f5cd575087c84
 }

@@ -28,7 +28,6 @@ public class Ciudad {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-<<<<<<< HEAD
 
     public boolean isCiudadActiva() {
         return ciudadActiva;
@@ -38,14 +37,4 @@ public class Ciudad {
         this.ciudadActiva = ciudadActiva;
     }
     
-=======
-    
-    public boolean getCiudadActiva(){
-        return ciudadActiva;
-    }
-    
-    public void setCiudadActiva(boolean ciudadActiva){
-        this.ciudadActiva= ciudadActiva;
-    }
->>>>>>> 0b2eb3e528544272cc6cee67bf2f5cd575087c84
 }
