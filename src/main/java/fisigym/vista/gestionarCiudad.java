@@ -81,7 +81,15 @@ public class gestionarCiudad extends javax.swing.JFrame {
             new String [] {
                 "Ciudad"
             }
-        ));
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
         jScrollPane1.setViewportView(tablaCiudades);
 
         buttonGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/GuardarTodo.png"))); // NOI18N
