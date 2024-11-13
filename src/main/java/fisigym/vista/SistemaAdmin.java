@@ -28,15 +28,15 @@ public class SistemaAdmin extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        InicioAdmin = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        gimnasiosInicio = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
         jButton13 = new javax.swing.JButton();
-        jTabbedPane1 = new javax.swing.JTabbedPane();
+        gimnasioPanel = new javax.swing.JTabbedPane();
         jPanel3 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -47,10 +47,16 @@ public class SistemaAdmin extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jButton14 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        buttonGimnasios = new javax.swing.JButton();
+        buttonDistritos = new javax.swing.JButton();
+        buttonCiudades = new javax.swing.JButton();
+        buttonServicios = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
@@ -78,22 +84,25 @@ public class SistemaAdmin extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(61, 78, 114));
         jPanel1.setMinimumSize(new java.awt.Dimension(100, 500));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/LogoAdmin.png"))); // NOI18N
         jLabel1.setMaximumSize(new java.awt.Dimension(195, 95));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 18, -1, -1));
 
-        jButton1.setBackground(new java.awt.Color(189, 197, 200));
-        jButton1.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
-        jButton1.setText("Inicio");
-        jButton1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        jButton1.setIconTextGap(18);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        InicioAdmin.setBackground(new java.awt.Color(189, 197, 200));
+        InicioAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
+        InicioAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
+        InicioAdmin.setText("Inicio");
+        InicioAdmin.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        InicioAdmin.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        InicioAdmin.setIconTextGap(18);
+        InicioAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                InicioAdminActionPerformed(evt);
             }
         });
+        jPanel1.add(InicioAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 113, 186, 34));
 
         jButton7.setBackground(new java.awt.Color(189, 197, 200));
         jButton7.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
@@ -107,19 +116,21 @@ public class SistemaAdmin extends javax.swing.JFrame {
                 jButton7ActionPerformed(evt);
             }
         });
+        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 159, 186, 34));
 
-        jButton8.setBackground(new java.awt.Color(189, 197, 200));
-        jButton8.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
-        jButton8.setText("Gestionar gimnasios");
-        jButton8.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jButton8.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        jButton8.setIconTextGap(18);
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        gimnasiosInicio.setBackground(new java.awt.Color(189, 197, 200));
+        gimnasiosInicio.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
+        gimnasiosInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
+        gimnasiosInicio.setText("Gimnasios");
+        gimnasiosInicio.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        gimnasiosInicio.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        gimnasiosInicio.setIconTextGap(18);
+        gimnasiosInicio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                gimnasiosInicioActionPerformed(evt);
             }
         });
+        jPanel1.add(gimnasiosInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 205, 186, 34));
 
         jButton9.setBackground(new java.awt.Color(189, 197, 200));
         jButton9.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
@@ -133,6 +144,7 @@ public class SistemaAdmin extends javax.swing.JFrame {
                 jButton9ActionPerformed(evt);
             }
         });
+        jPanel1.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 251, 186, 34));
 
         jButton10.setBackground(new java.awt.Color(189, 197, 200));
         jButton10.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
@@ -146,6 +158,7 @@ public class SistemaAdmin extends javax.swing.JFrame {
                 jButton10ActionPerformed(evt);
             }
         });
+        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 297, 186, 34));
 
         jButton11.setBackground(new java.awt.Color(189, 197, 200));
         jButton11.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
@@ -159,6 +172,7 @@ public class SistemaAdmin extends javax.swing.JFrame {
                 jButton11ActionPerformed(evt);
             }
         });
+        jPanel1.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 343, 186, 34));
 
         jButton12.setBackground(new java.awt.Color(189, 197, 200));
         jButton12.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
@@ -172,6 +186,7 @@ public class SistemaAdmin extends javax.swing.JFrame {
                 jButton12ActionPerformed(evt);
             }
         });
+        jPanel1.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 389, 186, 34));
 
         jButton13.setBackground(new java.awt.Color(189, 197, 200));
         jButton13.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
@@ -185,56 +200,11 @@ public class SistemaAdmin extends javax.swing.JFrame {
                 jButton13ActionPerformed(evt);
             }
         });
+        jPanel1.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 536, 186, 34));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGap(22, 22, 22)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGap(43, 43, 43)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(22, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
-                .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 230, 590));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 230, 500));
-
-        jTabbedPane1.setBackground(new java.awt.Color(251, 251, 251));
+        gimnasioPanel.setBackground(new java.awt.Color(251, 251, 251));
 
         jLabel6.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
         jLabel6.setText("Bienvenido!!!");
@@ -260,7 +230,7 @@ public class SistemaAdmin extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(120, 120, 120)
                         .addComponent(jLabel7)))
-                .addContainerGap(177, Short.MAX_VALUE))
+                .addContainerGap(465, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -271,10 +241,10 @@ public class SistemaAdmin extends javax.swing.JFrame {
                 .addComponent(jLabel7)
                 .addGap(87, 87, 87)
                 .addComponent(jButton4)
-                .addContainerGap(157, Short.MAX_VALUE))
+                .addContainerGap(255, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("Inicio", jPanel3);
+        gimnasioPanel.addTab("Inicio", jPanel3);
 
         jLabel10.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
         jLabel10.setText("Gestionar membresias");
@@ -304,7 +274,7 @@ public class SistemaAdmin extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(247, 247, 247)
                         .addComponent(jButton6)))
-                .addContainerGap(111, Short.MAX_VALUE))
+                .addContainerGap(401, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -317,56 +287,60 @@ public class SistemaAdmin extends javax.swing.JFrame {
                 .addComponent(jLabel12)
                 .addGap(94, 94, 94)
                 .addComponent(jButton6)
-                .addContainerGap(111, Short.MAX_VALUE))
+                .addContainerGap(209, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("Gestionar membresías", jPanel4);
+        gimnasioPanel.addTab("Gestionar membresías", jPanel4);
 
-        jLabel13.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
-        jLabel13.setText("Gestionar gimnasios");
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel14.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel14.setText("* Editar datos de gimnasios");
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/menugym.png"))); // NOI18N
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, -1, -1));
 
-        jLabel15.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel15.setText("* Ver informacion de gimnasios");
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (28).png"))); // NOI18N
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, -1, -1));
 
-        jButton14.setText("Continuar");
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (29).png"))); // NOI18N
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 150, -1, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (30).png"))); // NOI18N
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 320, -1, -1));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (31).png"))); // NOI18N
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 320, -1, -1));
+
+        buttonGimnasios.setText("Gestionar Gimnasios");
+        buttonGimnasios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonGimnasiosActionPerformed(evt);
+            }
+        });
+        jPanel2.add(buttonGimnasios, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 280, -1, -1));
+
+        buttonDistritos.setText("Gestionar Distritos");
+        jPanel2.add(buttonDistritos, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 460, -1, -1));
+
+        buttonCiudades.setText("Gestionar Ciudades");
+        jPanel2.add(buttonCiudades, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 280, -1, -1));
+
+        buttonServicios.setText("Gestionar Servicios");
+        jPanel2.add(buttonServicios, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 460, -1, -1));
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(96, 96, 96)
-                        .addComponent(jLabel13))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(79, 79, 79)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel15)
-                            .addComponent(jLabel14)))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(247, 247, 247)
-                        .addComponent(jButton14)))
-                .addContainerGap(148, Short.MAX_VALUE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(56, 56, 56)
-                .addComponent(jLabel13)
-                .addGap(66, 66, 66)
-                .addComponent(jLabel14)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel15)
-                .addGap(94, 94, 94)
-                .addComponent(jButton14)
-                .addContainerGap(111, Short.MAX_VALUE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
-        jTabbedPane1.addTab("Gestionar gimnasios", jPanel5);
+        gimnasioPanel.addTab("Gimnasios", jPanel5);
 
         jLabel16.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
         jLabel16.setText("Programacion de talleres");
@@ -396,7 +370,7 @@ public class SistemaAdmin extends javax.swing.JFrame {
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(247, 247, 247)
                         .addComponent(jButton15)))
-                .addContainerGap(75, Short.MAX_VALUE))
+                .addContainerGap(363, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -409,10 +383,10 @@ public class SistemaAdmin extends javax.swing.JFrame {
                 .addComponent(jLabel18)
                 .addGap(94, 94, 94)
                 .addComponent(jButton15)
-                .addContainerGap(111, Short.MAX_VALUE))
+                .addContainerGap(209, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("Programar talleres", jPanel6);
+        gimnasioPanel.addTab("Programar talleres", jPanel6);
 
         jLabel19.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
         jLabel19.setText("Registrar emntrenador");
@@ -442,7 +416,7 @@ public class SistemaAdmin extends javax.swing.JFrame {
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addGap(247, 247, 247)
                         .addComponent(jButton16)))
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addContainerGap(405, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -455,10 +429,10 @@ public class SistemaAdmin extends javax.swing.JFrame {
                 .addComponent(jLabel21)
                 .addGap(94, 94, 94)
                 .addComponent(jButton16)
-                .addContainerGap(111, Short.MAX_VALUE))
+                .addContainerGap(209, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("Registrar entrenador", jPanel7);
+        gimnasioPanel.addTab("Registrar entrenador", jPanel7);
 
         jLabel22.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
         jLabel22.setText("Ver reportes");
@@ -492,7 +466,7 @@ public class SistemaAdmin extends javax.swing.JFrame {
                             .addComponent(jLabel27)
                             .addComponent(jLabel23)
                             .addComponent(jLabel28))))
-                .addContainerGap(173, Short.MAX_VALUE))
+                .addContainerGap(459, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -507,10 +481,10 @@ public class SistemaAdmin extends javax.swing.JFrame {
                 .addComponent(jLabel28)
                 .addGap(58, 58, 58)
                 .addComponent(jButton17)
-                .addContainerGap(111, Short.MAX_VALUE))
+                .addContainerGap(209, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("Ver reportes", jPanel8);
+        gimnasioPanel.addTab("Ver reportes", jPanel8);
 
         jLabel25.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
         jLabel25.setText("Ver clientes");
@@ -535,7 +509,7 @@ public class SistemaAdmin extends javax.swing.JFrame {
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addGap(169, 169, 169)
                         .addComponent(jLabel25)))
-                .addContainerGap(214, Short.MAX_VALUE))
+                .addContainerGap(502, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -546,27 +520,27 @@ public class SistemaAdmin extends javax.swing.JFrame {
                 .addComponent(jLabel26)
                 .addGap(130, 130, 130)
                 .addComponent(jButton18)
-                .addContainerGap(111, Short.MAX_VALUE))
+                .addContainerGap(209, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("Ver clientes", jPanel9);
+        gimnasioPanel.addTab("Ver clientes", jPanel9);
 
-        getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 0, 570, 500));
+        getContentPane().add(gimnasioPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 0, 860, 590));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void InicioAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InicioAdminActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_InicioAdminActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton7ActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void gimnasiosInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gimnasiosInicioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_gimnasiosInicioActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
@@ -587,6 +561,10 @@ public class SistemaAdmin extends javax.swing.JFrame {
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void buttonGimnasiosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonGimnasiosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonGimnasiosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -627,12 +605,17 @@ public class SistemaAdmin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton InicioAdmin;
+    private javax.swing.JButton buttonCiudades;
+    private javax.swing.JButton buttonDistritos;
+    private javax.swing.JButton buttonGimnasios;
+    private javax.swing.JButton buttonServicios;
+    private javax.swing.JTabbedPane gimnasioPanel;
+    private javax.swing.JButton gimnasiosInicio;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
@@ -640,19 +623,16 @@ public class SistemaAdmin extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
@@ -661,9 +641,14 @@ public class SistemaAdmin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
@@ -671,6 +656,5 @@ public class SistemaAdmin extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JTabbedPane jTabbedPane1;
     // End of variables declaration//GEN-END:variables
 }
