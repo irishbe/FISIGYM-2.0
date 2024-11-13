@@ -29,13 +29,13 @@ public class SistemaAdmin extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         InicioAdmin = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        gimnasiosInicio = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
+        GestionarMembresiasInicio = new javax.swing.JButton();
+        gimnasiosInicioAdmin = new javax.swing.JButton();
+        talleresInicioAdmin = new javax.swing.JButton();
+        registrarAdmin = new javax.swing.JButton();
+        verReportesInicioAdmin = new javax.swing.JButton();
+        verClientesAdmin = new javax.swing.JButton();
+        cerrarSesiónAdmin = new javax.swing.JButton();
         AdminPanel = new javax.swing.JTabbedPane();
         InicioPanel = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
@@ -73,10 +73,6 @@ public class SistemaAdmin extends javax.swing.JFrame {
         buttonCiudades = new javax.swing.JButton();
         buttonServicios = new javax.swing.JButton();
         talleresPanel = new javax.swing.JPanel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jButton15 = new javax.swing.JButton();
         registrarAdminPanel = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
@@ -119,103 +115,103 @@ public class SistemaAdmin extends javax.swing.JFrame {
         });
         jPanel1.add(InicioAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 113, 186, 34));
 
-        jButton7.setBackground(new java.awt.Color(189, 197, 200));
-        jButton7.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
-        jButton7.setText("Gestionar membresías");
-        jButton7.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jButton7.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        jButton7.setIconTextGap(18);
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        GestionarMembresiasInicio.setBackground(new java.awt.Color(189, 197, 200));
+        GestionarMembresiasInicio.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
+        GestionarMembresiasInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
+        GestionarMembresiasInicio.setText("Gestionar membresías");
+        GestionarMembresiasInicio.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        GestionarMembresiasInicio.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        GestionarMembresiasInicio.setIconTextGap(18);
+        GestionarMembresiasInicio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                GestionarMembresiasInicioActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 159, 186, 34));
+        jPanel1.add(GestionarMembresiasInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 159, 186, 34));
 
-        gimnasiosInicio.setBackground(new java.awt.Color(189, 197, 200));
-        gimnasiosInicio.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
-        gimnasiosInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
-        gimnasiosInicio.setText("Gimnasios");
-        gimnasiosInicio.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        gimnasiosInicio.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        gimnasiosInicio.setIconTextGap(18);
-        gimnasiosInicio.addActionListener(new java.awt.event.ActionListener() {
+        gimnasiosInicioAdmin.setBackground(new java.awt.Color(189, 197, 200));
+        gimnasiosInicioAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
+        gimnasiosInicioAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
+        gimnasiosInicioAdmin.setText("Gimnasios");
+        gimnasiosInicioAdmin.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        gimnasiosInicioAdmin.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        gimnasiosInicioAdmin.setIconTextGap(18);
+        gimnasiosInicioAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gimnasiosInicioActionPerformed(evt);
+                gimnasiosInicioAdminActionPerformed(evt);
             }
         });
-        jPanel1.add(gimnasiosInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 205, 186, 34));
+        jPanel1.add(gimnasiosInicioAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 205, 186, 34));
 
-        jButton9.setBackground(new java.awt.Color(189, 197, 200));
-        jButton9.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
-        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
-        jButton9.setText("Programar talleres");
-        jButton9.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jButton9.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        jButton9.setIconTextGap(18);
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        talleresInicioAdmin.setBackground(new java.awt.Color(189, 197, 200));
+        talleresInicioAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
+        talleresInicioAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
+        talleresInicioAdmin.setText("Talleres");
+        talleresInicioAdmin.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        talleresInicioAdmin.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        talleresInicioAdmin.setIconTextGap(18);
+        talleresInicioAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                talleresInicioAdminActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 251, 186, 34));
+        jPanel1.add(talleresInicioAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 251, 186, 34));
 
-        jButton10.setBackground(new java.awt.Color(189, 197, 200));
-        jButton10.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
-        jButton10.setText("Registrar entrenador");
-        jButton10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jButton10.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        jButton10.setIconTextGap(18);
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        registrarAdmin.setBackground(new java.awt.Color(189, 197, 200));
+        registrarAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
+        registrarAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
+        registrarAdmin.setText("Registrar admin");
+        registrarAdmin.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        registrarAdmin.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        registrarAdmin.setIconTextGap(18);
+        registrarAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                registrarAdminActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 297, 186, 34));
+        jPanel1.add(registrarAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 297, 186, 34));
 
-        jButton11.setBackground(new java.awt.Color(189, 197, 200));
-        jButton11.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
-        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
-        jButton11.setText("Ver reportes");
-        jButton11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jButton11.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        jButton11.setIconTextGap(18);
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        verReportesInicioAdmin.setBackground(new java.awt.Color(189, 197, 200));
+        verReportesInicioAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
+        verReportesInicioAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
+        verReportesInicioAdmin.setText("Ver reportes");
+        verReportesInicioAdmin.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        verReportesInicioAdmin.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        verReportesInicioAdmin.setIconTextGap(18);
+        verReportesInicioAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                verReportesInicioAdminActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 343, 186, 34));
+        jPanel1.add(verReportesInicioAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 343, 186, 34));
 
-        jButton12.setBackground(new java.awt.Color(189, 197, 200));
-        jButton12.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
-        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
-        jButton12.setText("Ver clientes");
-        jButton12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jButton12.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        jButton12.setIconTextGap(18);
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
+        verClientesAdmin.setBackground(new java.awt.Color(189, 197, 200));
+        verClientesAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
+        verClientesAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
+        verClientesAdmin.setText("Ver clientes");
+        verClientesAdmin.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        verClientesAdmin.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        verClientesAdmin.setIconTextGap(18);
+        verClientesAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+                verClientesAdminActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 389, 186, 34));
+        jPanel1.add(verClientesAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 389, 186, 34));
 
-        jButton13.setBackground(new java.awt.Color(189, 197, 200));
-        jButton13.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
-        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
-        jButton13.setText("Cerrar sesión");
-        jButton13.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jButton13.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        jButton13.setIconTextGap(18);
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
+        cerrarSesiónAdmin.setBackground(new java.awt.Color(189, 197, 200));
+        cerrarSesiónAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
+        cerrarSesiónAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
+        cerrarSesiónAdmin.setText("Cerrar sesión");
+        cerrarSesiónAdmin.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        cerrarSesiónAdmin.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        cerrarSesiónAdmin.setIconTextGap(18);
+        cerrarSesiónAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
+                cerrarSesiónAdminActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 536, 186, 34));
+        jPanel1.add(cerrarSesiónAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 536, 186, 34));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 230, 590));
 
@@ -396,48 +392,15 @@ public class SistemaAdmin extends javax.swing.JFrame {
 
         AdminPanel.addTab("Gimnasios", GimnasiosPanel);
 
-        jLabel16.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
-        jLabel16.setText("Programacion de talleres");
-
-        jLabel17.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel17.setText("*Añadir nuevos talleres");
-
-        jLabel18.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel18.setText("* Ver informacion de talleres");
-
-        jButton15.setText("Continuar");
-
         javax.swing.GroupLayout talleresPanelLayout = new javax.swing.GroupLayout(talleresPanel);
         talleresPanel.setLayout(talleresPanelLayout);
         talleresPanelLayout.setHorizontalGroup(
             talleresPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(talleresPanelLayout.createSequentialGroup()
-                .addGroup(talleresPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(talleresPanelLayout.createSequentialGroup()
-                        .addGap(96, 96, 96)
-                        .addComponent(jLabel16))
-                    .addGroup(talleresPanelLayout.createSequentialGroup()
-                        .addGap(79, 79, 79)
-                        .addGroup(talleresPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel18)
-                            .addComponent(jLabel17)))
-                    .addGroup(talleresPanelLayout.createSequentialGroup()
-                        .addGap(247, 247, 247)
-                        .addComponent(jButton15)))
-                .addContainerGap(363, Short.MAX_VALUE))
+            .addGap(0, 860, Short.MAX_VALUE)
         );
         talleresPanelLayout.setVerticalGroup(
             talleresPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(talleresPanelLayout.createSequentialGroup()
-                .addGap(56, 56, 56)
-                .addComponent(jLabel16)
-                .addGap(66, 66, 66)
-                .addComponent(jLabel17)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel18)
-                .addGap(94, 94, 94)
-                .addComponent(jButton15)
-                .addContainerGap(209, Short.MAX_VALUE))
+            .addGap(0, 555, Short.MAX_VALUE)
         );
 
         AdminPanel.addTab("Programar talleres", talleresPanel);
@@ -588,33 +551,33 @@ public class SistemaAdmin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_InicioAdminActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void GestionarMembresiasInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GestionarMembresiasInicioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_GestionarMembresiasInicioActionPerformed
 
-    private void gimnasiosInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gimnasiosInicioActionPerformed
+    private void gimnasiosInicioAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gimnasiosInicioAdminActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_gimnasiosInicioActionPerformed
+    }//GEN-LAST:event_gimnasiosInicioAdminActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void talleresInicioAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_talleresInicioAdminActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
+    }//GEN-LAST:event_talleresInicioAdminActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void registrarAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registrarAdminActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_registrarAdminActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void verReportesInicioAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verReportesInicioAdminActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
+    }//GEN-LAST:event_verReportesInicioAdminActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void verClientesAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verClientesAdminActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
+    }//GEN-LAST:event_verClientesAdminActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+    private void cerrarSesiónAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cerrarSesiónAdminActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton13ActionPerformed
+    }//GEN-LAST:event_cerrarSesiónAdminActionPerformed
 
     private void buttonGimnasiosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonGimnasiosActionPerformed
         // TODO add your handling code here:
@@ -661,6 +624,7 @@ public class SistemaAdmin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTabbedPane AdminPanel;
     private javax.swing.JPanel GestionMembresiasPanel;
+    private javax.swing.JButton GestionarMembresiasInicio;
     private javax.swing.JPanel GimnasiosPanel;
     private javax.swing.JButton InicioAdmin;
     private javax.swing.JPanel InicioPanel;
@@ -670,19 +634,13 @@ public class SistemaAdmin extends javax.swing.JFrame {
     private javax.swing.JButton buttonDistritos;
     private javax.swing.JButton buttonGimnasios;
     private javax.swing.JButton buttonServicios;
+    private javax.swing.JButton cerrarSesiónAdmin;
     private javax.swing.JComboBox<String> elegirMembresía;
-    private javax.swing.JButton gimnasiosInicio;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton15;
+    private javax.swing.JButton gimnasiosInicioAdmin;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -690,9 +648,6 @@ public class SistemaAdmin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
@@ -720,10 +675,14 @@ public class SistemaAdmin extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JButton registrarAdmin;
     private javax.swing.JPanel registrarAdminPanel;
     private javax.swing.JPanel reportesPanel;
+    private javax.swing.JButton talleresInicioAdmin;
     private javax.swing.JPanel talleresPanel;
     private javax.swing.JTextField txtPrecioMembresia;
+    private javax.swing.JButton verClientesAdmin;
     private javax.swing.JPanel verClientesPanel;
+    private javax.swing.JButton verReportesInicioAdmin;
     // End of variables declaration//GEN-END:variables
 }
