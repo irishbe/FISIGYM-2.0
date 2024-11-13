@@ -27,14 +27,6 @@ public class adminGestionGimnasios extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        buttonGuardarGimnasio = new javax.swing.JButton();
-        buttonCrearGimnasio = new javax.swing.JButton();
-        buttonEditarGimnasio = new javax.swing.JButton();
-        buttonEliminarGimnasio = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        TablaGimnasios = new javax.swing.JTable();
-        buttonServicios = new javax.swing.JToggleButton();
-        buttonVolverInicio = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         elegirDistritoGym = new javax.swing.JComboBox<>();
@@ -46,10 +38,19 @@ public class adminGestionGimnasios extends javax.swing.JFrame {
         txtDirecciónGym = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         txtReferenciaGym = new javax.swing.JTextField();
+        buttonServicios = new javax.swing.JButton();
+        buttonVolverInicio = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        buttonGuardarGimnasio = new javax.swing.JButton();
+        buttonCrearGimnasio = new javax.swing.JButton();
+        buttonEditarGimnasio = new javax.swing.JButton();
+        buttonEliminarGimnasio = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        TablaGimnasios = new javax.swing.JTable();
+        jPanel4 = new javax.swing.JPanel();
+        buttonBuscar = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         txtBuscarGymAdmin = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -58,20 +59,71 @@ public class adminGestionGimnasios extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(1090, 590));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel2.setBackground(new java.awt.Color(61, 78, 114));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Distrito:");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, -1, -1));
+
+        elegirDistritoGym.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel2.add(elegirDistritoGym, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 110, 238, -1));
+
+        jLabel2.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Ciudad:");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, -1, -1));
+
+        elegirCiudadGym.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ciudad 1", "Ciudad 2", "Ciudad 3", "Ciudad 4" }));
+        jPanel2.add(elegirCiudadGym, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, 237, -1));
+
+        jLabel1.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Nombre:");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, -1, -1));
+        jPanel2.add(txtNombreGym, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 237, -1));
+
+        jLabel4.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Dirección:");
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 30, -1, -1));
+        jPanel2.add(txtDirecciónGym, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 30, 453, -1));
+
+        jLabel5.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Referencia:");
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 70, -1, -1));
+        jPanel2.add(txtReferenciaGym, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 70, 452, -1));
+
+        buttonServicios.setBackground(new java.awt.Color(229, 136, 150));
+        buttonServicios.setText("Servicios");
+        jPanel2.add(buttonServicios, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 80, 110, -1));
+
+        buttonVolverInicio.setBackground(new java.awt.Color(237, 222, 224));
+        buttonVolverInicio.setText("Volver");
+        buttonVolverInicio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(buttonVolverInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 30, 110, -1));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1110, 150));
+
+        jPanel3.setBackground(new java.awt.Color(219, 217, 232));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         buttonGuardarGimnasio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/GuardarTodo.png"))); // NOI18N
         buttonGuardarGimnasio.setText("Grabar");
         buttonGuardarGimnasio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(buttonGuardarGimnasio, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, -1, -1));
+        jPanel3.add(buttonGuardarGimnasio, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, -1, -1));
 
         buttonCrearGimnasio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/nuevo.png"))); // NOI18N
         buttonCrearGimnasio.setText("Nuevo");
         buttonCrearGimnasio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(buttonCrearGimnasio, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 160, -1, -1));
+        jPanel3.add(buttonCrearGimnasio, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 10, -1, -1));
 
         buttonEditarGimnasio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/Actualizar (2).png"))); // NOI18N
         buttonEditarGimnasio.setText("Editar");
         buttonEditarGimnasio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(buttonEditarGimnasio, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 160, -1, -1));
+        jPanel3.add(buttonEditarGimnasio, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 10, 100, -1));
 
         buttonEliminarGimnasio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/eliminar.png"))); // NOI18N
         buttonEliminarGimnasio.setText("Eliminar");
@@ -81,7 +133,7 @@ public class adminGestionGimnasios extends javax.swing.JFrame {
                 buttonEliminarGimnasioActionPerformed(evt);
             }
         });
-        jPanel1.add(buttonEliminarGimnasio, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 160, -1, -1));
+        jPanel3.add(buttonEliminarGimnasio, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 10, -1, -1));
 
         TablaGimnasios.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 51, 51), null));
         TablaGimnasios.setModel(new javax.swing.table.DefaultTableModel(
@@ -89,7 +141,7 @@ public class adminGestionGimnasios extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Nombre", "Ciudad", "Distrito", "Dirección", "Referencia"
+                "ID", "Nombre", "Ciudad", "Distrito", "Dirección", "Referencia"
             }
         ));
         TablaGimnasios.getTableHeader().setReorderingAllowed(false);
@@ -98,132 +150,26 @@ public class adminGestionGimnasios extends javax.swing.JFrame {
             TablaGimnasios.getColumnModel().getColumn(0).setPreferredWidth(50);
             TablaGimnasios.getColumnModel().getColumn(1).setPreferredWidth(50);
             TablaGimnasios.getColumnModel().getColumn(2).setPreferredWidth(50);
-            TablaGimnasios.getColumnModel().getColumn(3).setPreferredWidth(130);
+            TablaGimnasios.getColumnModel().getColumn(3).setPreferredWidth(50);
             TablaGimnasios.getColumnModel().getColumn(4).setPreferredWidth(130);
+            TablaGimnasios.getColumnModel().getColumn(5).setPreferredWidth(130);
         }
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 1030, 370));
+        jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 1030, 320));
 
-        buttonServicios.setText("Servicios");
-        buttonServicios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(buttonServicios, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 20, 110, -1));
+        jPanel4.setBackground(new java.awt.Color(248, 231, 248));
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        buttonVolverInicio.setText("Volver");
-        buttonVolverInicio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(buttonVolverInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 60, 110, -1));
-
-        jPanel2.setBackground(new java.awt.Color(61, 78, 114));
-
-        jLabel3.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Distrito:");
-
-        elegirDistritoGym.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        jLabel2.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Ciudad:");
-
-        elegirCiudadGym.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ciudad 1", "Ciudad 2", "Ciudad 3", "Ciudad 4" }));
-
-        jLabel1.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Nombre:");
-
-        jLabel4.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Dirección:");
-
-        jLabel5.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Referencia:");
+        buttonBuscar.setText("Buscar");
+        buttonBuscar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel4.add(buttonBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 10, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Gimnasio:");
+        jLabel6.setText("Buscar ID:");
+        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+        jPanel4.add(txtBuscarGymAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, 359, -1));
 
-        jButton1.setText("Buscar");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txtNombreGym, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel4)
-                        .addGap(18, 18, 18)
-                        .addComponent(txtDirecciónGym, javax.swing.GroupLayout.PREFERRED_SIZE, 453, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(elegirCiudadGym, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addGap(18, 18, 18)
-                                .addComponent(elegirDistritoGym, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel6)
-                                .addGap(18, 18, 18)
-                                .addComponent(txtBuscarGymAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 359, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton1))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addGap(3, 3, 3)
-                                .addComponent(jLabel5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(txtReferenciaGym, javax.swing.GroupLayout.PREFERRED_SIZE, 452, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(219, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(26, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(txtNombreGym, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4)
-                    .addComponent(txtDirecciónGym, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(elegirCiudadGym, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5)
-                    .addComponent(txtReferenciaGym, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(elegirDistritoGym, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6)
-                    .addComponent(txtBuscarGymAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1))
-                .addGap(21, 21, 21))
-        );
-
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1110, 150));
-
-        jPanel3.setBackground(new java.awt.Color(219, 217, 232));
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1090, Short.MAX_VALUE)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 440, Short.MAX_VALUE)
-        );
+        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 60, 570, 40));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 1090, 440));
 
@@ -274,15 +220,15 @@ public class adminGestionGimnasios extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable TablaGimnasios;
+    private javax.swing.JButton buttonBuscar;
     private javax.swing.JButton buttonCrearGimnasio;
     private javax.swing.JButton buttonEditarGimnasio;
     private javax.swing.JButton buttonEliminarGimnasio;
     private javax.swing.JButton buttonGuardarGimnasio;
-    private javax.swing.JToggleButton buttonServicios;
+    private javax.swing.JButton buttonServicios;
     private javax.swing.JButton buttonVolverInicio;
     private javax.swing.JComboBox<String> elegirCiudadGym;
     private javax.swing.JComboBox<String> elegirDistritoGym;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -292,6 +238,7 @@ public class adminGestionGimnasios extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField txtBuscarGymAdmin;
     private javax.swing.JTextField txtDirecciónGym;

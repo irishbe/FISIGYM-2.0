@@ -42,6 +42,10 @@ public class gestionarDistritos extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        txtBuscarCiudad = new javax.swing.JTextField();
+        buttonBuscar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -52,12 +56,12 @@ public class gestionarDistritos extends javax.swing.JFrame {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/sedes3.png"))); // NOI18N
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 60, -1, 160));
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 30, 190, 160));
 
         jLabel2.setFont(new java.awt.Font("Gill Sans Ultra Bold", 1, 48)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(229, 136, 150));
         jLabel2.setText("Distritos");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, -1, -1));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 40, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -74,9 +78,9 @@ public class gestionarDistritos extends javax.swing.JFrame {
         jPanel2.add(txtDistrito, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 130, 280, -1));
 
         buttonVolver.setText("Volver");
-        jPanel2.add(buttonVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 20, -1, -1));
+        jPanel2.add(buttonVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 40, -1, -1));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1110, 230));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1110, 190));
 
         jPanel3.setBackground(new java.awt.Color(219, 217, 232));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -96,25 +100,39 @@ public class gestionarDistritos extends javax.swing.JFrame {
             jTable1.getColumnModel().getColumn(1).setResizable(false);
         }
 
-        jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(372, 20, 490, 290));
+        jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 80, 490, 290));
 
         buttonGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/GuardarTodo.png"))); // NOI18N
         buttonGuardar.setText("Grabar");
-        jPanel3.add(buttonGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 60, 100, -1));
+        jPanel3.add(buttonGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, 100, -1));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/nuevo.png"))); // NOI18N
         jButton1.setText("Nuevo");
-        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, 100, -1));
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 100, -1));
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/Actualizar (2).png"))); // NOI18N
         jButton2.setText("Editar");
-        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 160, 100, -1));
+        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 100, -1));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/eliminar.png"))); // NOI18N
         jButton3.setText("Eliminar");
-        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, -1, -1));
+        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 290, -1, -1));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 1100, 360));
+        jPanel4.setBackground(new java.awt.Color(248, 231, 248));
+        jPanel4.setPreferredSize(new java.awt.Dimension(570, 40));
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
+        jLabel5.setText("Buscar ciudad:");
+        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+        jPanel4.add(txtBuscarCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, 250, -1));
+
+        buttonBuscar.setText("Buscar");
+        jPanel4.add(buttonBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 10, -1, -1));
+
+        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 40, 490, 40));
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 1100, 400));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -170,6 +188,7 @@ public class gestionarDistritos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton buttonBuscar;
     private javax.swing.JButton buttonGuardar;
     private javax.swing.JButton buttonVolver;
     private javax.swing.JComboBox<String> elegirCiudad;
@@ -180,11 +199,14 @@ public class gestionarDistritos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
+    private javax.swing.JTextField txtBuscarCiudad;
     private javax.swing.JTextField txtDistrito;
     // End of variables declaration//GEN-END:variables
 }

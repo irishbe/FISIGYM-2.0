@@ -36,17 +36,32 @@ public class SistemaAdmin extends javax.swing.JFrame {
         jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
         jButton13 = new javax.swing.JButton();
-        gimnasioPanel = new javax.swing.JTabbedPane();
-        jPanel3 = new javax.swing.JPanel();
+        AdminPanel = new javax.swing.JTabbedPane();
+        InicioPanel = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
+        GestionMembresiasPanel = new javax.swing.JPanel();
+        jPanel10 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        elegirMembresía = new javax.swing.JComboBox<>();
+        txtPrecioMembresia = new javax.swing.JTextField();
+        jLabel24 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jPanel11 = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        buttonBuscar = new javax.swing.JButton();
+        buttonActulizarMembresia = new javax.swing.JButton();
+        GimnasiosPanel = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -57,23 +72,23 @@ public class SistemaAdmin extends javax.swing.JFrame {
         buttonDistritos = new javax.swing.JButton();
         buttonCiudades = new javax.swing.JButton();
         buttonServicios = new javax.swing.JButton();
-        jPanel6 = new javax.swing.JPanel();
+        talleresPanel = new javax.swing.JPanel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jButton15 = new javax.swing.JButton();
-        jPanel7 = new javax.swing.JPanel();
+        registrarAdminPanel = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jButton16 = new javax.swing.JButton();
-        jPanel8 = new javax.swing.JPanel();
+        reportesPanel = new javax.swing.JPanel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jButton17 = new javax.swing.JButton();
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
-        jPanel9 = new javax.swing.JPanel();
+        verClientesPanel = new javax.swing.JPanel();
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         jButton18 = new javax.swing.JButton();
@@ -204,7 +219,7 @@ public class SistemaAdmin extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 230, 590));
 
-        gimnasioPanel.setBackground(new java.awt.Color(251, 251, 251));
+        AdminPanel.setBackground(new java.awt.Color(251, 251, 251));
 
         jLabel6.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
         jLabel6.setText("Bienvenido!!!");
@@ -214,27 +229,27 @@ public class SistemaAdmin extends javax.swing.JFrame {
 
         jButton4.setText("Continuar");
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout InicioPanelLayout = new javax.swing.GroupLayout(InicioPanel);
+        InicioPanel.setLayout(InicioPanelLayout);
+        InicioPanelLayout.setHorizontalGroup(
+            InicioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(InicioPanelLayout.createSequentialGroup()
+                .addGroup(InicioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(InicioPanelLayout.createSequentialGroup()
                         .addGap(50, 50, 50)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(InicioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel6)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
+                            .addGroup(InicioPanelLayout.createSequentialGroup()
                                 .addGap(196, 196, 196)
                                 .addComponent(jButton4))))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
+                    .addGroup(InicioPanelLayout.createSequentialGroup()
                         .addGap(120, 120, 120)
                         .addComponent(jLabel7)))
                 .addContainerGap(465, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        InicioPanelLayout.setVerticalGroup(
+            InicioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(InicioPanelLayout.createSequentialGroup()
                 .addGap(55, 55, 55)
                 .addComponent(jLabel6)
                 .addGap(64, 64, 64)
@@ -244,62 +259,101 @@ public class SistemaAdmin extends javax.swing.JFrame {
                 .addContainerGap(255, Short.MAX_VALUE))
         );
 
-        gimnasioPanel.addTab("Inicio", jPanel3);
+        AdminPanel.addTab("Inicio", InicioPanel);
 
-        jLabel10.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
-        jLabel10.setText("Gestionar membresias");
+        jPanel10.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel11.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel11.setText("* Editar datos de membresias");
+        jLabel12.setFont(new java.awt.Font("Gill Sans Ultra Bold", 1, 36)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(61, 78, 114));
+        jLabel12.setText("Membresías");
+        jPanel10.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, -1, -1));
 
-        jButton6.setText("Continuar");
+        jLabel13.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
+        jLabel13.setText("Membresía:");
+        jPanel10.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, -1, -1));
 
-        jLabel12.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel12.setText("* Ver informacion de membresias");
+        jLabel14.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
+        jLabel14.setText("Precio:");
+        jPanel10.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, -1, -1));
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(96, 96, 96)
-                        .addComponent(jLabel10))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(79, 79, 79)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel12)
-                            .addComponent(jLabel11)))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(247, 247, 247)
-                        .addComponent(jButton6)))
-                .addContainerGap(401, Short.MAX_VALUE))
+        jLabel15.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
+        jLabel15.setText("Beneficios:");
+        jPanel10.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, -1, -1));
+
+        elegirMembresía.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 14)); // NOI18N
+        elegirMembresía.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Diamante", "Zafiro", "Esmeralda" }));
+        jPanel10.add(elegirMembresía, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, 170, -1));
+
+        txtPrecioMembresia.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 14)); // NOI18N
+        jPanel10.add(txtPrecioMembresia, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 160, 230, -1));
+
+        jLabel24.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel24.setText("S/.");
+        jPanel10.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 160, -1, -1));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        jPanel10.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 220, 270, 110));
+
+        jPanel11.setBackground(new java.awt.Color(200, 200, 234));
+        jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/DiamanteLogo.png"))); // NOI18N
+        jPanel11.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, -1, -1));
+
+        jLabel29.setFont(new java.awt.Font("Gill Sans MT", 1, 18)); // NOI18N
+        jLabel29.setText("DIAMANTE");
+        jPanel11.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
+
+        jLabel30.setFont(new java.awt.Font("Gill Sans MT", 1, 18)); // NOI18N
+        jLabel30.setText("ZAFIRO");
+        jPanel11.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 30, -1, -1));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/Zafiro.png"))); // NOI18N
+        jPanel11.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 70, -1, -1));
+
+        jLabel31.setFont(new java.awt.Font("Gill Sans MT", 1, 18)); // NOI18N
+        jLabel31.setText("ESMERALDA");
+        jPanel11.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 30, -1, -1));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/esmeralda.png"))); // NOI18N
+        jPanel11.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 70, -1, -1));
+
+        jPanel10.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 380, 470, 150));
+
+        buttonBuscar.setText("Buscar");
+        jPanel10.add(buttonBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 100, 80, -1));
+
+        buttonActulizarMembresia.setBackground(new java.awt.Color(229, 136, 150));
+        buttonActulizarMembresia.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        buttonActulizarMembresia.setForeground(new java.awt.Color(255, 255, 255));
+        buttonActulizarMembresia.setText("Actualizar");
+        jPanel10.add(buttonActulizarMembresia, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 350, 100, -1));
+
+        javax.swing.GroupLayout GestionMembresiasPanelLayout = new javax.swing.GroupLayout(GestionMembresiasPanel);
+        GestionMembresiasPanel.setLayout(GestionMembresiasPanelLayout);
+        GestionMembresiasPanelLayout.setHorizontalGroup(
+            GestionMembresiasPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(56, 56, 56)
-                .addComponent(jLabel10)
-                .addGap(66, 66, 66)
-                .addComponent(jLabel11)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel12)
-                .addGap(94, 94, 94)
-                .addComponent(jButton6)
-                .addContainerGap(209, Short.MAX_VALUE))
+        GestionMembresiasPanelLayout.setVerticalGroup(
+            GestionMembresiasPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        gimnasioPanel.addTab("Gestionar membresías", jPanel4);
+        AdminPanel.addTab("Gestionar membresías", GestionMembresiasPanel);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/menugym.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/MembresiaLogoCLien.png"))); // NOI18N
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (28).png"))); // NOI18N
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, -1, -1));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 120, 120));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (29).png"))); // NOI18N
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 150, -1, -1));
@@ -327,20 +381,20 @@ public class SistemaAdmin extends javax.swing.JFrame {
         buttonServicios.setText("Gestionar Servicios");
         jPanel2.add(buttonServicios, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 460, -1, -1));
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout GimnasiosPanelLayout = new javax.swing.GroupLayout(GimnasiosPanel);
+        GimnasiosPanel.setLayout(GimnasiosPanelLayout);
+        GimnasiosPanelLayout.setHorizontalGroup(
+            GimnasiosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
+        GimnasiosPanelLayout.setVerticalGroup(
+            GimnasiosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(GimnasiosPanelLayout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        gimnasioPanel.addTab("Gimnasios", jPanel5);
+        AdminPanel.addTab("Gimnasios", GimnasiosPanel);
 
         jLabel16.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
         jLabel16.setText("Programacion de talleres");
@@ -353,28 +407,28 @@ public class SistemaAdmin extends javax.swing.JFrame {
 
         jButton15.setText("Continuar");
 
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
+        javax.swing.GroupLayout talleresPanelLayout = new javax.swing.GroupLayout(talleresPanel);
+        talleresPanel.setLayout(talleresPanelLayout);
+        talleresPanelLayout.setHorizontalGroup(
+            talleresPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(talleresPanelLayout.createSequentialGroup()
+                .addGroup(talleresPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(talleresPanelLayout.createSequentialGroup()
                         .addGap(96, 96, 96)
                         .addComponent(jLabel16))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
+                    .addGroup(talleresPanelLayout.createSequentialGroup()
                         .addGap(79, 79, 79)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(talleresPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel18)
                             .addComponent(jLabel17)))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
+                    .addGroup(talleresPanelLayout.createSequentialGroup()
                         .addGap(247, 247, 247)
                         .addComponent(jButton15)))
                 .addContainerGap(363, Short.MAX_VALUE))
         );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
+        talleresPanelLayout.setVerticalGroup(
+            talleresPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(talleresPanelLayout.createSequentialGroup()
                 .addGap(56, 56, 56)
                 .addComponent(jLabel16)
                 .addGap(66, 66, 66)
@@ -386,7 +440,7 @@ public class SistemaAdmin extends javax.swing.JFrame {
                 .addContainerGap(209, Short.MAX_VALUE))
         );
 
-        gimnasioPanel.addTab("Programar talleres", jPanel6);
+        AdminPanel.addTab("Programar talleres", talleresPanel);
 
         jLabel19.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
         jLabel19.setText("Registrar emntrenador");
@@ -399,28 +453,28 @@ public class SistemaAdmin extends javax.swing.JFrame {
 
         jButton16.setText("Continuar");
 
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
+        javax.swing.GroupLayout registrarAdminPanelLayout = new javax.swing.GroupLayout(registrarAdminPanel);
+        registrarAdminPanel.setLayout(registrarAdminPanelLayout);
+        registrarAdminPanelLayout.setHorizontalGroup(
+            registrarAdminPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(registrarAdminPanelLayout.createSequentialGroup()
+                .addGroup(registrarAdminPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(registrarAdminPanelLayout.createSequentialGroup()
                         .addGap(96, 96, 96)
                         .addComponent(jLabel19))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
+                    .addGroup(registrarAdminPanelLayout.createSequentialGroup()
                         .addGap(79, 79, 79)
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(registrarAdminPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel21)
                             .addComponent(jLabel20)))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
+                    .addGroup(registrarAdminPanelLayout.createSequentialGroup()
                         .addGap(247, 247, 247)
                         .addComponent(jButton16)))
                 .addContainerGap(405, Short.MAX_VALUE))
         );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
+        registrarAdminPanelLayout.setVerticalGroup(
+            registrarAdminPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(registrarAdminPanelLayout.createSequentialGroup()
                 .addGap(56, 56, 56)
                 .addComponent(jLabel19)
                 .addGap(66, 66, 66)
@@ -432,7 +486,7 @@ public class SistemaAdmin extends javax.swing.JFrame {
                 .addContainerGap(209, Short.MAX_VALUE))
         );
 
-        gimnasioPanel.addTab("Registrar entrenador", jPanel7);
+        AdminPanel.addTab("Registrar entrenador", registrarAdminPanel);
 
         jLabel22.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
         jLabel22.setText("Ver reportes");
@@ -448,29 +502,29 @@ public class SistemaAdmin extends javax.swing.JFrame {
         jLabel28.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jLabel28.setText("* Reporte de disciplinas mas solicitadas");
 
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel8Layout.createSequentialGroup()
+        javax.swing.GroupLayout reportesPanelLayout = new javax.swing.GroupLayout(reportesPanel);
+        reportesPanel.setLayout(reportesPanelLayout);
+        reportesPanelLayout.setHorizontalGroup(
+            reportesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(reportesPanelLayout.createSequentialGroup()
+                .addGroup(reportesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(reportesPanelLayout.createSequentialGroup()
                         .addGap(247, 247, 247)
                         .addComponent(jButton17))
-                    .addGroup(jPanel8Layout.createSequentialGroup()
+                    .addGroup(reportesPanelLayout.createSequentialGroup()
                         .addGap(165, 165, 165)
                         .addComponent(jLabel22))
-                    .addGroup(jPanel8Layout.createSequentialGroup()
+                    .addGroup(reportesPanelLayout.createSequentialGroup()
                         .addGap(79, 79, 79)
-                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(reportesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel27)
                             .addComponent(jLabel23)
                             .addComponent(jLabel28))))
                 .addContainerGap(459, Short.MAX_VALUE))
         );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
+        reportesPanelLayout.setVerticalGroup(
+            reportesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(reportesPanelLayout.createSequentialGroup()
                 .addGap(50, 50, 50)
                 .addComponent(jLabel22)
                 .addGap(72, 72, 72)
@@ -484,7 +538,7 @@ public class SistemaAdmin extends javax.swing.JFrame {
                 .addContainerGap(209, Short.MAX_VALUE))
         );
 
-        gimnasioPanel.addTab("Ver reportes", jPanel8);
+        AdminPanel.addTab("Ver reportes", reportesPanel);
 
         jLabel25.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
         jLabel25.setText("Ver clientes");
@@ -494,26 +548,26 @@ public class SistemaAdmin extends javax.swing.JFrame {
 
         jButton18.setText("Continuar");
 
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel9Layout.createSequentialGroup()
+        javax.swing.GroupLayout verClientesPanelLayout = new javax.swing.GroupLayout(verClientesPanel);
+        verClientesPanel.setLayout(verClientesPanelLayout);
+        verClientesPanelLayout.setHorizontalGroup(
+            verClientesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(verClientesPanelLayout.createSequentialGroup()
+                .addGroup(verClientesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(verClientesPanelLayout.createSequentialGroup()
                         .addGap(79, 79, 79)
                         .addComponent(jLabel26))
-                    .addGroup(jPanel9Layout.createSequentialGroup()
+                    .addGroup(verClientesPanelLayout.createSequentialGroup()
                         .addGap(247, 247, 247)
                         .addComponent(jButton18))
-                    .addGroup(jPanel9Layout.createSequentialGroup()
+                    .addGroup(verClientesPanelLayout.createSequentialGroup()
                         .addGap(169, 169, 169)
                         .addComponent(jLabel25)))
                 .addContainerGap(502, Short.MAX_VALUE))
         );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
+        verClientesPanelLayout.setVerticalGroup(
+            verClientesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(verClientesPanelLayout.createSequentialGroup()
                 .addGap(57, 57, 57)
                 .addComponent(jLabel25)
                 .addGap(65, 65, 65)
@@ -523,9 +577,9 @@ public class SistemaAdmin extends javax.swing.JFrame {
                 .addContainerGap(209, Short.MAX_VALUE))
         );
 
-        gimnasioPanel.addTab("Ver clientes", jPanel9);
+        AdminPanel.addTab("Ver clientes", verClientesPanel);
 
-        getContentPane().add(gimnasioPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 0, 860, 590));
+        getContentPane().add(AdminPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 0, 860, 590));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -605,12 +659,18 @@ public class SistemaAdmin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTabbedPane AdminPanel;
+    private javax.swing.JPanel GestionMembresiasPanel;
+    private javax.swing.JPanel GimnasiosPanel;
     private javax.swing.JButton InicioAdmin;
+    private javax.swing.JPanel InicioPanel;
+    private javax.swing.JButton buttonActulizarMembresia;
+    private javax.swing.JButton buttonBuscar;
     private javax.swing.JButton buttonCiudades;
     private javax.swing.JButton buttonDistritos;
     private javax.swing.JButton buttonGimnasios;
     private javax.swing.JButton buttonServicios;
-    private javax.swing.JTabbedPane gimnasioPanel;
+    private javax.swing.JComboBox<String> elegirMembresía;
     private javax.swing.JButton gimnasiosInicio;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -621,13 +681,15 @@ public class SistemaAdmin extends javax.swing.JFrame {
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -637,24 +699,31 @@ public class SistemaAdmin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JPanel registrarAdminPanel;
+    private javax.swing.JPanel reportesPanel;
+    private javax.swing.JPanel talleresPanel;
+    private javax.swing.JTextField txtPrecioMembresia;
+    private javax.swing.JPanel verClientesPanel;
     // End of variables declaration//GEN-END:variables
 }
