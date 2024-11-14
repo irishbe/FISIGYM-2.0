@@ -7,7 +7,6 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     
-    
     <build>
         <resources>
             <resource>
@@ -18,8 +17,7 @@
             </resource>
         </resources>
     </build>
-    
-    
+
     <dependencies>
         <dependency>
             <groupId>org.netbeans.external</groupId>
@@ -45,6 +43,4 @@
         <maven.compiler.target>22</maven.compiler.target>
         <exec.mainClass>fisigym.clases.Fisigym</exec.mainClass>
     </properties>
-
-
 </project>
