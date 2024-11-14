@@ -97,10 +97,13 @@ public class adminGestionGimnasios extends javax.swing.JFrame {
         jPanel2.add(txtReferenciaGym, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 70, 452, -1));
 
         buttonServicios.setBackground(new java.awt.Color(229, 136, 150));
+        buttonServicios.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        buttonServicios.setForeground(new java.awt.Color(255, 255, 255));
         buttonServicios.setText("Servicios");
         jPanel2.add(buttonServicios, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 80, 110, -1));
 
-        buttonVolverInicio.setBackground(new java.awt.Color(237, 222, 224));
+        buttonVolverInicio.setBackground(new java.awt.Color(204, 204, 255));
+        buttonVolverInicio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         buttonVolverInicio.setText("Volver");
         buttonVolverInicio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(buttonVolverInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 30, 110, -1));
