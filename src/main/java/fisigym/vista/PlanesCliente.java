@@ -446,8 +446,8 @@ public class PlanesCliente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton IrRegistro;
-    private javax.swing.JButton RegresarPlanesCliente;
+    public javax.swing.JButton IrRegistro;
+    public javax.swing.JButton RegresarPlanesCliente;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

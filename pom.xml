@@ -5,6 +5,20 @@
     <artifactId>fisigym</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
+    
+    
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>fisigym/imagenes/**</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+    
+    
     <dependencies>
         <dependency>
             <groupId>org.netbeans.external</groupId>
@@ -23,11 +37,13 @@
         </dependency>
     </dependencies>
 
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>22</maven.compiler.source>
         <maven.compiler.target>22</maven.compiler.target>
         <exec.mainClass>fisigym.clases.Fisigym</exec.mainClass>
     </properties>
+
 
 </project>

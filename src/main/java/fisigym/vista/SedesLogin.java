@@ -201,12 +201,12 @@ public class SedesLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton ConfirmarSede;
+    public javax.swing.JButton ConfirmarSede;
     private javax.swing.JTextArea DireccionSedesRegistro;
     private javax.swing.JComboBox<String> ListaCiudadesRegistro;
     private javax.swing.JComboBox<String> ListaDistritosRegistro;
     private javax.swing.JComboBox<String> ListaSedesRegistro;
-    private javax.swing.JButton VolverSedes;
+    public javax.swing.JButton VolverSedes;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
