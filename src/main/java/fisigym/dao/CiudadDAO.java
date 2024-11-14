@@ -5,6 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import fisigym.modelo.Ciudad;
+import java.util.ArrayList;
+import java.sql.ResultSet;
 
 public class CiudadDAO {
 
@@ -25,10 +27,8 @@ public class CiudadDAO {
             
             statement = conexion.prepareStatement(sql);
 
-            
-            statement.setString(1, ciudad.getNombre());
-            statement.setBoolean(2, ciudad.getCiudadActiva());
-
+            statement.setString(1, ciudad.getNombre() );
+            statement.setBoolean(2, ciudad.isCiudadActiva() );
             
             return statement.executeUpdate() > 0;
 
@@ -108,5 +108,46 @@ public class CiudadDAO {
         }
 
         return false;
+    }
+    
+    public static ArrayList<Ciudad> obtenerCiudades() {
+        ArrayList<Ciudad> ciudades = new ArrayList<>();
+        Connection conexion = null;
+        PreparedStatement statement = null;
+        ResultSet rs = null;
+
+        try {
+            conexion = DBConexion.getConnection();
+            String sql = "SELECT * FROM ciudades";
+
+            if (conexion == null) return null;
+
+            statement = conexion.prepareStatement(sql);
+
+            // Ejecutando la consulta
+            rs = statement.executeQuery();
+
+            while (rs.next()) {
+                Ciudad ciudad = new Ciudad();
+                ciudad.setIdCiudad(rs.getInt("idCiudad"));
+                ciudad.setNombre(rs.getString("nombre"));
+
+                ciudades.add(ciudad);
+            }
+
+        } catch (SQLException e) {
+            System.out.println(e.toString());
+        } finally {
+            // Cerramos recursos
+            try {
+                if (rs != null) rs.close();
+                if (statement != null) statement.close();
+                if (conexion != null) DBConexion.closeConnection(conexion);
+            } catch (SQLException e) {
+                System.out.println(e.toString());
+            }
+        }
+
+        return ciudades;
     }
 }

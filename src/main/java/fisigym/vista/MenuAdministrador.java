@@ -11,7 +11,7 @@ package fisigym.vista;
 public class MenuAdministrador extends javax.swing.JFrame {
 
     /**
-     * Creates new form SistemaAdmin
+     * Creates new form SistemaCliente
      */
     public MenuAdministrador() {
         initComponents();
@@ -27,841 +27,536 @@ public class MenuAdministrador extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        buttonGestionarMembresíasAdmin = new javax.swing.JButton();
-        buttonGestionarGimnasioAdmin = new javax.swing.JButton();
-        buttonTalleresAdmin = new javax.swing.JButton();
-        buttonRegistrarAdmin = new javax.swing.JButton();
-        buttonMostrarUsuarios = new javax.swing.JButton();
-        logOutAdmin = new javax.swing.JButton();
-        logOutAdmin1 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        jTabbedPane1 = new javax.swing.JTabbedPane();
-        PanelMembresiaAdmin = new javax.swing.JPanel();
-        jPanel8 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        VerMembresiasAdmin = new javax.swing.JButton();
-        ActualizarMembresiaAdmin = new javax.swing.JButton();
-        ParentPanel = new javax.swing.JPanel();
-        panelVerMembresia = new javax.swing.JPanel();
-        jPanel11 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
+        InicioAdmin = new javax.swing.JButton();
+        GestionarMembresiasInicio = new javax.swing.JButton();
+        gimnasiosInicioAdmin = new javax.swing.JButton();
+        talleresInicioAdmin = new javax.swing.JButton();
+        registrarAdmin = new javax.swing.JButton();
+        verReportesInicioAdmin = new javax.swing.JButton();
+        verClientesAdmin = new javax.swing.JButton();
+        cerrarSesiónAdmin = new javax.swing.JButton();
+        AdminPanel = new javax.swing.JTabbedPane();
+        InicioPanel = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        precioMembDiamanteAdmin = new javax.swing.JTextArea();
-        jPanel9 = new javax.swing.JPanel();
+        jButton4 = new javax.swing.JButton();
+        GimnasiosPanel = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        precioMembZafiroAdmin = new javax.swing.JTextArea();
+        buttonGimnasios = new javax.swing.JButton();
+        buttonDistritos = new javax.swing.JButton();
+        buttonCiudades = new javax.swing.JButton();
+        buttonServicios = new javax.swing.JButton();
+        talleresPanel = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        GestionMembresiasPanel = new javax.swing.JPanel();
+        jPanel10 = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jPanel10 = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        precioMembEsmeraldaAdmin = new javax.swing.JTextArea();
-        panelActualizarMembresia = new javax.swing.JPanel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
-        PanelGimnasios = new javax.swing.JPanel();
-        jLabel23 = new javax.swing.JLabel();
+        elegirMembresía = new javax.swing.JComboBox<>();
+        txtPrecioMembresia = new javax.swing.JTextField();
         jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        comboGimnasiosCiudades = new javax.swing.JComboBox<>();
-        comboGimnasiosDistritos = new javax.swing.JComboBox<>();
-        buttonRegistraGimnasio = new javax.swing.JButton();
-        jLabel26 = new javax.swing.JLabel();
-        txtGimnasioDireccion = new javax.swing.JTextField();
-        jLabel27 = new javax.swing.JLabel();
-        jScrollPane6 = new javax.swing.JScrollPane();
-        txtGimnasioReferencia = new javax.swing.JTextArea();
-        PanelCiudades = new javax.swing.JPanel();
-        jLabel28 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jPanel11 = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
-        txtNombreCiudad = new javax.swing.JTextField();
-        buttonRegistrarCiudad = new javax.swing.JButton();
-        PanelDistritos = new javax.swing.JPanel();
         jLabel30 = new javax.swing.JLabel();
-        txtNombreDistrito = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
-        buttonRegistrarDistrito = new javax.swing.JButton();
-        jLabel32 = new javax.swing.JLabel();
-        comboDistritoCiudades = new javax.swing.JComboBox<>();
-        PanelTalleresAdmin = new javax.swing.JPanel();
-        PanelAdministradores = new javax.swing.JPanel();
-        PanelVerClientes = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
+        buttonBuscar = new javax.swing.JButton();
+        buttonActulizarMembresia = new javax.swing.JButton();
+        registrarAdminPanel = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        txtCorreoAdmin = new javax.swing.JTextField();
+        jLabel21 = new javax.swing.JLabel();
+        passwordAdmin = new javax.swing.JPasswordField();
+        jButton5 = new javax.swing.JButton();
+        verClientesPanel = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel33 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
+        reportesPanel = new javax.swing.JPanel();
+        jButton17 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setSize(new java.awt.Dimension(800, 500));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(61, 78, 114));
-        jPanel2.setPreferredSize(new java.awt.Dimension(230, 500));
+        jPanel1.setBackground(new java.awt.Color(61, 78, 114));
+        jPanel1.setMinimumSize(new java.awt.Dimension(100, 500));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/LogoAdmin.png"))); // NOI18N
+        jLabel1.setMaximumSize(new java.awt.Dimension(195, 95));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 18, -1, -1));
 
-        buttonGestionarMembresíasAdmin.setBackground(new java.awt.Color(189, 197, 200));
-        buttonGestionarMembresíasAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
-        buttonGestionarMembresíasAdmin.setText("Gestionar mebresías");
-        buttonGestionarMembresíasAdmin.setToolTipText("");
-        buttonGestionarMembresíasAdmin.setPreferredSize(new java.awt.Dimension(186, 34));
-
-        buttonGestionarGimnasioAdmin.setBackground(new java.awt.Color(189, 197, 200));
-        buttonGestionarGimnasioAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
-        buttonGestionarGimnasioAdmin.setText("Gestionar gimnasios");
-        buttonGestionarGimnasioAdmin.setPreferredSize(new java.awt.Dimension(186, 34));
-
-        buttonTalleresAdmin.setBackground(new java.awt.Color(189, 197, 200));
-        buttonTalleresAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
-        buttonTalleresAdmin.setText("Programar talleres");
-        buttonTalleresAdmin.setPreferredSize(new java.awt.Dimension(186, 34));
-
-        buttonRegistrarAdmin.setBackground(new java.awt.Color(189, 197, 200));
-        buttonRegistrarAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
-        buttonRegistrarAdmin.setText("Registrar administrador");
-        buttonRegistrarAdmin.setPreferredSize(new java.awt.Dimension(186, 34));
-
-        buttonMostrarUsuarios.setBackground(new java.awt.Color(189, 197, 200));
-        buttonMostrarUsuarios.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
-        buttonMostrarUsuarios.setText("Registrar Sede");
-        buttonMostrarUsuarios.setPreferredSize(new java.awt.Dimension(186, 34));
-
-        logOutAdmin.setBackground(new java.awt.Color(189, 197, 200));
-        logOutAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
-        logOutAdmin.setText("Ver clientes");
-        logOutAdmin.setPreferredSize(new java.awt.Dimension(186, 34));
-
-        logOutAdmin1.setBackground(new java.awt.Color(189, 197, 200));
-        logOutAdmin1.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
-        logOutAdmin1.setText("Cerrar sesión");
-        logOutAdmin1.setPreferredSize(new java.awt.Dimension(186, 34));
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(27, 27, 27)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(buttonGestionarMembresíasAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonGestionarGimnasioAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonTalleresAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonRegistrarAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonMostrarUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(logOutAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(logOutAdmin1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(17, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(35, 35, 35))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(39, 39, 39)
-                .addComponent(jLabel1)
-                .addGap(29, 29, 29)
-                .addComponent(buttonGestionarMembresíasAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(buttonGestionarGimnasioAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(buttonTalleresAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(buttonRegistrarAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
-                .addComponent(buttonMostrarUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(logOutAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
-                .addComponent(logOutAdmin1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18))
-        );
-
-        jPanel3.setPreferredSize(new java.awt.Dimension(585, 534));
-
-        PanelMembresiaAdmin.setBackground(new java.awt.Color(255, 255, 255));
-
-        jPanel8.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/MembresiaLogoCLien.png"))); // NOI18N
-
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel3.setText("Gestionar Membresías");
-
-        VerMembresiasAdmin.setText("Ver membresías");
-        VerMembresiasAdmin.addActionListener(new java.awt.event.ActionListener() {
+        InicioAdmin.setBackground(new java.awt.Color(189, 197, 200));
+        InicioAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
+        InicioAdmin.setText("Inicio");
+        InicioAdmin.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        InicioAdmin.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        InicioAdmin.setIconTextGap(18);
+        InicioAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                VerMembresiasAdminActionPerformed(evt);
+                InicioAdminActionPerformed(evt);
             }
         });
+        jPanel1.add(InicioAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 113, 186, 34));
 
-        ActualizarMembresiaAdmin.setText("Actualizar membresías");
-        ActualizarMembresiaAdmin.addActionListener(new java.awt.event.ActionListener() {
+        GestionarMembresiasInicio.setBackground(new java.awt.Color(189, 197, 200));
+        GestionarMembresiasInicio.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
+        GestionarMembresiasInicio.setText("Gestionar membresías");
+        GestionarMembresiasInicio.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        GestionarMembresiasInicio.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        GestionarMembresiasInicio.setIconTextGap(18);
+        GestionarMembresiasInicio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ActualizarMembresiaAdminActionPerformed(evt);
+                GestionarMembresiasInicioActionPerformed(evt);
             }
         });
+        jPanel1.add(GestionarMembresiasInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 159, 186, 34));
 
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2)
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(VerMembresiasAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 257, Short.MAX_VALUE)
-                        .addComponent(ActualizarMembresiaAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(41, 41, 41))
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addGap(96, 96, 96)
-                        .addComponent(jLabel3)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+        gimnasiosInicioAdmin.setBackground(new java.awt.Color(189, 197, 200));
+        gimnasiosInicioAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
+        gimnasiosInicioAdmin.setText("Gimnasios");
+        gimnasiosInicioAdmin.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        gimnasiosInicioAdmin.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        gimnasiosInicioAdmin.setIconTextGap(18);
+        gimnasiosInicioAdmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gimnasiosInicioAdminActionPerformed(evt);
+            }
+        });
+        jPanel1.add(gimnasiosInicioAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 205, 186, 34));
+
+        talleresInicioAdmin.setBackground(new java.awt.Color(189, 197, 200));
+        talleresInicioAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
+        talleresInicioAdmin.setText("Talleres");
+        talleresInicioAdmin.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        talleresInicioAdmin.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        talleresInicioAdmin.setIconTextGap(18);
+        talleresInicioAdmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                talleresInicioAdminActionPerformed(evt);
+            }
+        });
+        jPanel1.add(talleresInicioAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 251, 186, 34));
+
+        registrarAdmin.setBackground(new java.awt.Color(189, 197, 200));
+        registrarAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
+        registrarAdmin.setText("Registrar administrador");
+        registrarAdmin.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        registrarAdmin.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        registrarAdmin.setIconTextGap(18);
+        registrarAdmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                registrarAdminActionPerformed(evt);
+            }
+        });
+        jPanel1.add(registrarAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 297, 186, 34));
+
+        verReportesInicioAdmin.setBackground(new java.awt.Color(189, 197, 200));
+        verReportesInicioAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
+        verReportesInicioAdmin.setText("Ver reportes");
+        verReportesInicioAdmin.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        verReportesInicioAdmin.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        verReportesInicioAdmin.setIconTextGap(18);
+        verReportesInicioAdmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                verReportesInicioAdminActionPerformed(evt);
+            }
+        });
+        jPanel1.add(verReportesInicioAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 186, 34));
+
+        verClientesAdmin.setBackground(new java.awt.Color(189, 197, 200));
+        verClientesAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
+        verClientesAdmin.setText("Clientes");
+        verClientesAdmin.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        verClientesAdmin.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        verClientesAdmin.setIconTextGap(18);
+        verClientesAdmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                verClientesAdminActionPerformed(evt);
+            }
+        });
+        jPanel1.add(verClientesAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 186, 34));
+
+        cerrarSesiónAdmin.setBackground(new java.awt.Color(189, 197, 200));
+        cerrarSesiónAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
+        cerrarSesiónAdmin.setText("Cerrar sesión");
+        cerrarSesiónAdmin.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        cerrarSesiónAdmin.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        cerrarSesiónAdmin.setIconTextGap(18);
+        cerrarSesiónAdmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cerrarSesiónAdminActionPerformed(evt);
+            }
+        });
+        jPanel1.add(cerrarSesiónAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 536, 186, 34));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 230, 590));
+
+        AdminPanel.setBackground(new java.awt.Color(251, 251, 251));
+
+        jLabel6.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
+        jLabel6.setText("Bienvenido!!!");
+
+        jLabel7.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jLabel7.setText("Usuario registrado : Administrador");
+
+        jButton4.setText("Continuar");
+
+        javax.swing.GroupLayout InicioPanelLayout = new javax.swing.GroupLayout(InicioPanel);
+        InicioPanel.setLayout(InicioPanelLayout);
+        InicioPanelLayout.setHorizontalGroup(
+            InicioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(InicioPanelLayout.createSequentialGroup()
+                .addGroup(InicioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(InicioPanelLayout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addGroup(InicioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel6)
+                            .addGroup(InicioPanelLayout.createSequentialGroup()
+                                .addGap(196, 196, 196)
+                                .addComponent(jButton4))))
+                    .addGroup(InicioPanelLayout.createSequentialGroup()
+                        .addGap(120, 120, 120)
+                        .addComponent(jLabel7)))
+                .addContainerGap(465, Short.MAX_VALUE))
         );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel3)
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(ActualizarMembresiaAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(VerMembresiasAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        ParentPanel.setLayout(new java.awt.CardLayout());
-
-        panelVerMembresia.setBackground(new java.awt.Color(231, 230, 230));
-
-        jPanel11.setPreferredSize(new java.awt.Dimension(176, 256));
-        jPanel11.setRequestFocusEnabled(false);
-
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel4.setText("DIAMANTE");
-
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/DiamanteLogo.png"))); // NOI18N
-
-        jLabel10.setText("Accede a multiples");
-
-        jLabel11.setText("beneficios con tu membresía");
-
-        jLabel12.setText("DIAMANTE");
-
-        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        precioMembDiamanteAdmin.setEditable(false);
-        precioMembDiamanteAdmin.setColumns(20);
-        precioMembDiamanteAdmin.setRows(5);
-        precioMembDiamanteAdmin.setText("             S/. 100");
-        precioMembDiamanteAdmin.setBorder(null);
-        jScrollPane1.setViewportView(precioMembDiamanteAdmin);
-
-        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
-        jPanel11.setLayout(jPanel11Layout);
-        jPanel11Layout.setHorizontalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel11Layout.createSequentialGroup()
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addGap(56, 56, 56)
-                        .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel4)))
-                    .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addGap(62, 62, 62)
-                        .addComponent(jLabel12))
-                    .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(jLabel11)))
-                .addContainerGap(24, Short.MAX_VALUE))
-            .addGroup(jPanel11Layout.createSequentialGroup()
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
-                        .addComponent(jLabel10))
-                    .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        jPanel11Layout.setVerticalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel11Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel10)
-                .addGap(7, 7, 7)
-                .addComponent(jLabel11)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel12)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
-        );
-
-        jPanel9.setPreferredSize(new java.awt.Dimension(176, 256));
-
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel5.setText("ZAFIRO");
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/Zafiro.png"))); // NOI18N
-
-        jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        precioMembZafiroAdmin.setEditable(false);
-        precioMembZafiroAdmin.setColumns(20);
-        precioMembZafiroAdmin.setRows(5);
-        precioMembZafiroAdmin.setText("             S/. 80");
-        precioMembZafiroAdmin.setBorder(null);
-        jScrollPane2.setViewportView(precioMembZafiroAdmin);
-
-        jLabel13.setText("Con el plan ZAFIRO puedes");
-
-        jLabel14.setText("acceder a un gimnasio");
-
-        jLabel15.setText("predeterminado y todos los");
-
-        jLabel16.setText("servicios que posee");
-
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
-                        .addComponent(jLabel15)
-                        .addGap(10, 10, 10))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
-                        .addComponent(jLabel8)
-                        .addGap(51, 51, 51))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
-                        .addComponent(jLabel16)
-                        .addGap(34, 34, 34))))
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel9Layout.createSequentialGroup()
-                                .addGap(9, 9, 9)
-                                .addComponent(jLabel14))
-                            .addComponent(jLabel13)))
-                    .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addGap(64, 64, 64)
-                        .addComponent(jLabel5)))
-                .addContainerGap(22, Short.MAX_VALUE))
-        );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel13)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel14)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel15)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel16)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16))
-        );
-
-        jPanel10.setPreferredSize(new java.awt.Dimension(176, 256));
-
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel6.setText("ESMERALDA");
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/esmeralda.png"))); // NOI18N
-
-        jLabel17.setText("Con el plan ESMERALDA");
-
-        jLabel18.setText("puedes acceder a un");
-
-        jLabel19.setText("gimnasio predeterminado");
-
-        jScrollPane3.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        precioMembEsmeraldaAdmin.setEditable(false);
-        precioMembEsmeraldaAdmin.setColumns(20);
-        precioMembEsmeraldaAdmin.setRows(5);
-        precioMembEsmeraldaAdmin.setText("             S/. 60");
-        precioMembEsmeraldaAdmin.setBorder(null);
-        jScrollPane3.setViewportView(precioMembEsmeraldaAdmin);
-
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6)
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(jLabel9)))
-                .addGap(53, 53, 53))
-            .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel19)
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(jLabel18))
-                    .addComponent(jLabel17))
-                .addContainerGap(24, Short.MAX_VALUE))
-        );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
+        InicioPanelLayout.setVerticalGroup(
+            InicioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(InicioPanelLayout.createSequentialGroup()
+                .addGap(55, 55, 55)
                 .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel9)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel17)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel18)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel19)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(15, 15, 15))
+                .addGap(64, 64, 64)
+                .addComponent(jLabel7)
+                .addGap(87, 87, 87)
+                .addComponent(jButton4)
+                .addContainerGap(255, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout panelVerMembresiaLayout = new javax.swing.GroupLayout(panelVerMembresia);
-        panelVerMembresia.setLayout(panelVerMembresiaLayout);
-        panelVerMembresiaLayout.setHorizontalGroup(
-            panelVerMembresiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelVerMembresiaLayout.createSequentialGroup()
-                .addGap(42, 42, 42)
-                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47)
-                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
-                .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(40, 40, 40))
+        AdminPanel.addTab("Inicio", InicioPanel);
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/MembresiaLogoCLien.png"))); // NOI18N
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, -1, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (28).png"))); // NOI18N
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 120, 120));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (29).png"))); // NOI18N
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 150, -1, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (30).png"))); // NOI18N
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 320, -1, -1));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (31).png"))); // NOI18N
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 320, -1, -1));
+
+        buttonGimnasios.setText("Gestionar Gimnasios");
+        buttonGimnasios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonGimnasiosActionPerformed(evt);
+            }
+        });
+        jPanel2.add(buttonGimnasios, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 280, -1, -1));
+
+        buttonDistritos.setText("Gestionar Distritos");
+        jPanel2.add(buttonDistritos, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 460, -1, -1));
+
+        buttonCiudades.setText("Gestionar Ciudades");
+        jPanel2.add(buttonCiudades, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 280, -1, -1));
+
+        buttonServicios.setText("Gestionar Servicios");
+        jPanel2.add(buttonServicios, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 460, -1, -1));
+
+        javax.swing.GroupLayout GimnasiosPanelLayout = new javax.swing.GroupLayout(GimnasiosPanel);
+        GimnasiosPanel.setLayout(GimnasiosPanelLayout);
+        GimnasiosPanelLayout.setHorizontalGroup(
+            GimnasiosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        panelVerMembresiaLayout.setVerticalGroup(
-            panelVerMembresiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelVerMembresiaLayout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addGroup(panelVerMembresiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(42, Short.MAX_VALUE))
+        GimnasiosPanelLayout.setVerticalGroup(
+            GimnasiosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(GimnasiosPanelLayout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
-        ParentPanel.add(panelVerMembresia, "card2");
+        AdminPanel.addTab("Gimnasios", GimnasiosPanel);
 
-        panelActualizarMembresia.setBackground(new java.awt.Color(220, 220, 220));
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel20.setText("Membresía:");
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (33).png"))); // NOI18N
+        jPanel3.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, -1, -1));
 
-        jLabel21.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel21.setText("Nuevo precio:");
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (35).png"))); // NOI18N
+        jPanel3.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 170, -1, -1));
 
-        jLabel22.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel22.setText("Beneficios:");
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (34).png"))); // NOI18N
+        jPanel3.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 330, -1, -1));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Diamante", "Zafiro", "Esmeralda" }));
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (36).png"))); // NOI18N
+        jPanel3.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 50, -1, -1));
+
+        jButton1.setText("Gestionar Talleres");
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, -1, -1));
+
+        jButton2.setText("Gestionar Entrenadores");
+        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 460, -1, -1));
+
+        jButton3.setText("Gestionar Disciplinas");
+        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 290, -1, -1));
+
+        javax.swing.GroupLayout talleresPanelLayout = new javax.swing.GroupLayout(talleresPanel);
+        talleresPanel.setLayout(talleresPanelLayout);
+        talleresPanelLayout.setHorizontalGroup(
+            talleresPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        talleresPanelLayout.setVerticalGroup(
+            talleresPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(talleresPanelLayout.createSequentialGroup()
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        AdminPanel.addTab("Programar talleres", talleresPanel);
+
+        jPanel10.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel12.setFont(new java.awt.Font("Gill Sans Ultra Bold", 1, 36)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(61, 78, 114));
+        jLabel12.setText("Membresías");
+        jPanel10.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, -1, -1));
+
+        jLabel13.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
+        jLabel13.setText("Membresía:");
+        jPanel10.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, -1, -1));
+
+        jLabel14.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
+        jLabel14.setText("Precio:");
+        jPanel10.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, -1, -1));
+
+        jLabel15.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
+        jLabel15.setText("Beneficios:");
+        jPanel10.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, -1, -1));
+
+        elegirMembresía.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 14)); // NOI18N
+        elegirMembresía.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Diamante", "Zafiro", "Esmeralda" }));
+        jPanel10.add(elegirMembresía, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, 170, -1));
+
+        txtPrecioMembresia.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 14)); // NOI18N
+        jPanel10.add(txtPrecioMembresia, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 160, 230, -1));
+
+        jLabel24.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel24.setText("S/.");
+        jPanel10.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 160, -1, -1));
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
-        jScrollPane4.setViewportView(jTextArea1);
+        jScrollPane1.setViewportView(jTextArea1);
 
-        jTextArea2.setColumns(20);
-        jTextArea2.setRows(5);
-        jScrollPane5.setViewportView(jTextArea2);
+        jPanel10.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 220, 270, 110));
 
-        javax.swing.GroupLayout panelActualizarMembresiaLayout = new javax.swing.GroupLayout(panelActualizarMembresia);
-        panelActualizarMembresia.setLayout(panelActualizarMembresiaLayout);
-        panelActualizarMembresiaLayout.setHorizontalGroup(
-            panelActualizarMembresiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelActualizarMembresiaLayout.createSequentialGroup()
-                .addGap(202, 202, 202)
-                .addGroup(panelActualizarMembresiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel20)
-                    .addComponent(jLabel21)
-                    .addComponent(jLabel22))
-                .addGap(54, 54, 54)
-                .addGroup(panelActualizarMembresiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelActualizarMembresiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jComboBox1, 0, 146, Short.MAX_VALUE)
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(143, Short.MAX_VALUE))
+        jPanel11.setBackground(new java.awt.Color(200, 200, 234));
+        jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/DiamanteLogo.png"))); // NOI18N
+        jPanel11.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, -1, -1));
+
+        jLabel29.setFont(new java.awt.Font("Gill Sans MT", 1, 18)); // NOI18N
+        jLabel29.setText("DIAMANTE");
+        jPanel11.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
+
+        jLabel30.setFont(new java.awt.Font("Gill Sans MT", 1, 18)); // NOI18N
+        jLabel30.setText("ZAFIRO");
+        jPanel11.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 30, -1, -1));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/Zafiro.png"))); // NOI18N
+        jPanel11.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 70, -1, -1));
+
+        jLabel31.setFont(new java.awt.Font("Gill Sans MT", 1, 18)); // NOI18N
+        jLabel31.setText("ESMERALDA");
+        jPanel11.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 30, -1, -1));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/esmeralda.png"))); // NOI18N
+        jPanel11.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 70, -1, -1));
+
+        jPanel10.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 380, 470, 150));
+
+        buttonBuscar.setText("Buscar");
+        jPanel10.add(buttonBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 100, 80, -1));
+
+        buttonActulizarMembresia.setBackground(new java.awt.Color(229, 136, 150));
+        buttonActulizarMembresia.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        buttonActulizarMembresia.setForeground(new java.awt.Color(255, 255, 255));
+        buttonActulizarMembresia.setText("Actualizar");
+        jPanel10.add(buttonActulizarMembresia, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 350, 100, -1));
+
+        javax.swing.GroupLayout GestionMembresiasPanelLayout = new javax.swing.GroupLayout(GestionMembresiasPanel);
+        GestionMembresiasPanel.setLayout(GestionMembresiasPanelLayout);
+        GestionMembresiasPanelLayout.setHorizontalGroup(
+            GestionMembresiasPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        panelActualizarMembresiaLayout.setVerticalGroup(
-            panelActualizarMembresiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelActualizarMembresiaLayout.createSequentialGroup()
-                .addGap(81, 81, 81)
-                .addGroup(panelActualizarMembresiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel20)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(panelActualizarMembresiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelActualizarMembresiaLayout.createSequentialGroup()
-                        .addGap(42, 42, 42)
-                        .addComponent(jLabel21))
-                    .addGroup(panelActualizarMembresiaLayout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(panelActualizarMembresiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelActualizarMembresiaLayout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(jLabel22))
-                    .addGroup(panelActualizarMembresiaLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(47, Short.MAX_VALUE))
-        );
-
-        ParentPanel.add(panelActualizarMembresia, "card3");
-
-        javax.swing.GroupLayout PanelMembresiaAdminLayout = new javax.swing.GroupLayout(PanelMembresiaAdmin);
-        PanelMembresiaAdmin.setLayout(PanelMembresiaAdminLayout);
-        PanelMembresiaAdminLayout.setHorizontalGroup(
-            PanelMembresiaAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(PanelMembresiaAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(PanelMembresiaAdminLayout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(ParentPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addContainerGap()))
-        );
-        PanelMembresiaAdminLayout.setVerticalGroup(
-            PanelMembresiaAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelMembresiaAdminLayout.createSequentialGroup()
-                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1, 1, 1))
-            .addGroup(PanelMembresiaAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelMembresiaAdminLayout.createSequentialGroup()
-                    .addGap(0, 135, Short.MAX_VALUE)
-                    .addComponent(ParentPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        GestionMembresiasPanelLayout.setVerticalGroup(
+            GestionMembresiasPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jTabbedPane1.addTab("Membresias", PanelMembresiaAdmin);
+        AdminPanel.addTab("Gestionar membresías", GestionMembresiasPanel);
 
-        jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel23.setText("Gimnasios");
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel24.setText("Ciudad");
+        jLabel19.setFont(new java.awt.Font("Gill Sans Ultra Bold", 1, 36)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(61, 78, 114));
+        jLabel19.setText("Ingrese sus credenciales");
+        jPanel4.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 80, -1, -1));
 
-        jLabel25.setText("Distrito");
+        jLabel20.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 24)); // NOI18N
+        jLabel20.setText("Correo Electrónico");
+        jPanel4.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, -1, -1));
 
-        comboGimnasiosCiudades.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        txtCorreoAdmin.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jPanel4.add(txtCorreoAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 210, 500, -1));
 
-        comboGimnasiosDistritos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jLabel21.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 24)); // NOI18N
+        jLabel21.setText("Contraseña");
+        jPanel4.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 270, -1, -1));
 
-        buttonRegistraGimnasio.setText("Registrar");
+        passwordAdmin.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jPanel4.add(passwordAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 300, 500, -1));
 
-        jLabel26.setText("Direccion");
+        jButton5.setBackground(new java.awt.Color(229, 136, 150));
+        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
+        jButton5.setText("Acceder");
+        jPanel4.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 390, -1, -1));
 
-        txtGimnasioDireccion.setMinimumSize(new java.awt.Dimension(5, 25));
-
-        jLabel27.setText("Referencia");
-
-        txtGimnasioReferencia.setColumns(20);
-        txtGimnasioReferencia.setRows(5);
-        jScrollPane6.setViewportView(txtGimnasioReferencia);
-
-        javax.swing.GroupLayout PanelGimnasiosLayout = new javax.swing.GroupLayout(PanelGimnasios);
-        PanelGimnasios.setLayout(PanelGimnasiosLayout);
-        PanelGimnasiosLayout.setHorizontalGroup(
-            PanelGimnasiosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelGimnasiosLayout.createSequentialGroup()
-                .addGroup(PanelGimnasiosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PanelGimnasiosLayout.createSequentialGroup()
-                        .addGap(293, 293, 293)
-                        .addComponent(jLabel23))
-                    .addGroup(PanelGimnasiosLayout.createSequentialGroup()
-                        .addGap(44, 44, 44)
-                        .addGroup(PanelGimnasiosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(PanelGimnasiosLayout.createSequentialGroup()
-                                .addGroup(PanelGimnasiosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel25)
-                                    .addComponent(jLabel26))
-                                .addGap(54, 54, 54)
-                                .addGroup(PanelGimnasiosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(comboGimnasiosDistritos, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(txtGimnasioDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(PanelGimnasiosLayout.createSequentialGroup()
-                                .addComponent(jLabel24)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(comboGimnasiosCiudades, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(PanelGimnasiosLayout.createSequentialGroup()
-                                .addComponent(jLabel27)
-                                .addGap(46, 46, 46)
-                                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(PanelGimnasiosLayout.createSequentialGroup()
-                        .addGap(118, 118, 118)
-                        .addComponent(buttonRegistraGimnasio)))
-                .addContainerGap(357, Short.MAX_VALUE))
+        javax.swing.GroupLayout registrarAdminPanelLayout = new javax.swing.GroupLayout(registrarAdminPanel);
+        registrarAdminPanel.setLayout(registrarAdminPanelLayout);
+        registrarAdminPanelLayout.setHorizontalGroup(
+            registrarAdminPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        PanelGimnasiosLayout.setVerticalGroup(
-            PanelGimnasiosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelGimnasiosLayout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(jLabel23)
-                .addGap(34, 34, 34)
-                .addGroup(PanelGimnasiosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel24)
-                    .addComponent(comboGimnasiosCiudades, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(23, 23, 23)
-                .addGroup(PanelGimnasiosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(comboGimnasiosDistritos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel25))
-                .addGap(18, 18, 18)
-                .addGroup(PanelGimnasiosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel26)
-                    .addGroup(PanelGimnasiosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(txtGimnasioDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
-                .addGroup(PanelGimnasiosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel27)
-                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27)
-                .addComponent(buttonRegistraGimnasio)
-                .addContainerGap(144, Short.MAX_VALUE))
+        registrarAdminPanelLayout.setVerticalGroup(
+            registrarAdminPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jTabbedPane1.addTab("Gimnasios", PanelGimnasios);
+        AdminPanel.addTab("Registrar administrador", registrarAdminPanel);
 
-        PanelCiudades.setPreferredSize(new java.awt.Dimension(585, 534));
+        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel28.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel28.setText("Ciudades");
+        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (39).png"))); // NOI18N
+        jPanel5.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 80, -1, -1));
 
-        jLabel29.setText("Nombre");
+        jButton6.setBackground(new java.awt.Color(229, 136, 150));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
+        jButton6.setText("Gestionar Clientes");
+        jPanel5.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 360, -1, -1));
 
-        txtNombreCiudad.setMinimumSize(new java.awt.Dimension(5, 25));
-
-        buttonRegistrarCiudad.setText("Registrar");
-
-        javax.swing.GroupLayout PanelCiudadesLayout = new javax.swing.GroupLayout(PanelCiudades);
-        PanelCiudades.setLayout(PanelCiudadesLayout);
-        PanelCiudadesLayout.setHorizontalGroup(
-            PanelCiudadesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelCiudadesLayout.createSequentialGroup()
-                .addGroup(PanelCiudadesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PanelCiudadesLayout.createSequentialGroup()
-                        .addGap(289, 289, 289)
-                        .addComponent(jLabel28))
-                    .addGroup(PanelCiudadesLayout.createSequentialGroup()
-                        .addGap(38, 38, 38)
-                        .addComponent(jLabel29)
-                        .addGap(54, 54, 54)
-                        .addComponent(txtNombreCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(PanelCiudadesLayout.createSequentialGroup()
-                        .addGap(102, 102, 102)
-                        .addComponent(buttonRegistrarCiudad)))
-                .addContainerGap(371, Short.MAX_VALUE))
+        javax.swing.GroupLayout verClientesPanelLayout = new javax.swing.GroupLayout(verClientesPanel);
+        verClientesPanel.setLayout(verClientesPanelLayout);
+        verClientesPanelLayout.setHorizontalGroup(
+            verClientesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        PanelCiudadesLayout.setVerticalGroup(
-            PanelCiudadesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelCiudadesLayout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(jLabel28)
-                .addGap(32, 32, 32)
-                .addGroup(PanelCiudadesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel29)
-                    .addGroup(PanelCiudadesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(txtNombreCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(32, 32, 32)
-                .addComponent(buttonRegistrarCiudad)
-                .addContainerGap(309, Short.MAX_VALUE))
+        verClientesPanelLayout.setVerticalGroup(
+            verClientesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jTabbedPane1.addTab("Ciudades", PanelCiudades);
+        AdminPanel.addTab("Clientes", verClientesPanel);
 
-        jLabel30.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel30.setText("Distritos");
+        jButton17.setText("Continuar");
 
-        txtNombreDistrito.setMinimumSize(new java.awt.Dimension(5, 25));
-
-        jLabel31.setText("Nombre");
-
-        buttonRegistrarDistrito.setText("Registrar");
-
-        jLabel32.setText("Ciudad");
-
-        comboDistritoCiudades.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        javax.swing.GroupLayout PanelDistritosLayout = new javax.swing.GroupLayout(PanelDistritos);
-        PanelDistritos.setLayout(PanelDistritosLayout);
-        PanelDistritosLayout.setHorizontalGroup(
-            PanelDistritosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelDistritosLayout.createSequentialGroup()
-                .addGroup(PanelDistritosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PanelDistritosLayout.createSequentialGroup()
-                        .addGap(289, 289, 289)
-                        .addComponent(jLabel30))
-                    .addGroup(PanelDistritosLayout.createSequentialGroup()
-                        .addGap(38, 38, 38)
-                        .addGroup(PanelDistritosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel31)
-                            .addComponent(jLabel32))
-                        .addGap(54, 54, 54)
-                        .addGroup(PanelDistritosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtNombreDistrito, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
-                            .addComponent(comboDistritoCiudades, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(PanelDistritosLayout.createSequentialGroup()
-                        .addGap(101, 101, 101)
-                        .addComponent(buttonRegistrarDistrito)))
-                .addContainerGap(377, Short.MAX_VALUE))
+        javax.swing.GroupLayout reportesPanelLayout = new javax.swing.GroupLayout(reportesPanel);
+        reportesPanel.setLayout(reportesPanelLayout);
+        reportesPanelLayout.setHorizontalGroup(
+            reportesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, reportesPanelLayout.createSequentialGroup()
+                .addContainerGap(425, Short.MAX_VALUE)
+                .addComponent(jButton17)
+                .addGap(354, 354, 354))
         );
-        PanelDistritosLayout.setVerticalGroup(
-            PanelDistritosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelDistritosLayout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(jLabel30)
-                .addGap(32, 32, 32)
-                .addGroup(PanelDistritosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel31)
-                    .addGroup(PanelDistritosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(txtNombreDistrito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(PanelDistritosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(comboDistritoCiudades, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel32))
-                .addGap(29, 29, 29)
-                .addComponent(buttonRegistrarDistrito)
-                .addContainerGap(270, Short.MAX_VALUE))
+        reportesPanelLayout.setVerticalGroup(
+            reportesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, reportesPanelLayout.createSequentialGroup()
+                .addContainerGap(356, Short.MAX_VALUE)
+                .addComponent(jButton17)
+                .addGap(176, 176, 176))
         );
 
-        jTabbedPane1.addTab("Distritos", PanelDistritos);
+        AdminPanel.addTab("Ver reportes", reportesPanel);
 
-        javax.swing.GroupLayout PanelTalleresAdminLayout = new javax.swing.GroupLayout(PanelTalleresAdmin);
-        PanelTalleresAdmin.setLayout(PanelTalleresAdminLayout);
-        PanelTalleresAdminLayout.setHorizontalGroup(
-            PanelTalleresAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 737, Short.MAX_VALUE)
-        );
-        PanelTalleresAdminLayout.setVerticalGroup(
-            PanelTalleresAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 473, Short.MAX_VALUE)
-        );
-
-        jTabbedPane1.addTab("Talleres", PanelTalleresAdmin);
-
-        javax.swing.GroupLayout PanelAdministradoresLayout = new javax.swing.GroupLayout(PanelAdministradores);
-        PanelAdministradores.setLayout(PanelAdministradoresLayout);
-        PanelAdministradoresLayout.setHorizontalGroup(
-            PanelAdministradoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 737, Short.MAX_VALUE)
-        );
-        PanelAdministradoresLayout.setVerticalGroup(
-            PanelAdministradoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 473, Short.MAX_VALUE)
-        );
-
-        jTabbedPane1.addTab("Administradores", PanelAdministradores);
-
-        javax.swing.GroupLayout PanelVerClientesLayout = new javax.swing.GroupLayout(PanelVerClientes);
-        PanelVerClientes.setLayout(PanelVerClientesLayout);
-        PanelVerClientesLayout.setHorizontalGroup(
-            PanelVerClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 737, Short.MAX_VALUE)
-        );
-        PanelVerClientesLayout.setVerticalGroup(
-            PanelVerClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 473, Short.MAX_VALUE)
-        );
-
-        jTabbedPane1.addTab("Clientes", PanelVerClientes);
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 742, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        getContentPane().add(AdminPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 0, 860, 590));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void VerMembresiasAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerMembresiasAdminActionPerformed
-        ParentPanel.removeAll();
-        ParentPanel.add(panelVerMembresia);
-        ParentPanel.repaint();
-        ParentPanel.revalidate();
-    }//GEN-LAST:event_VerMembresiasAdminActionPerformed
+    private void InicioAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InicioAdminActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_InicioAdminActionPerformed
 
-    private void ActualizarMembresiaAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ActualizarMembresiaAdminActionPerformed
-        ParentPanel.removeAll();
-        ParentPanel.add(panelActualizarMembresia);
-        ParentPanel.repaint();
-        ParentPanel.revalidate();
-    }//GEN-LAST:event_ActualizarMembresiaAdminActionPerformed
+    private void GestionarMembresiasInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GestionarMembresiasInicioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_GestionarMembresiasInicioActionPerformed
+
+    private void gimnasiosInicioAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gimnasiosInicioAdminActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gimnasiosInicioAdminActionPerformed
+
+    private void talleresInicioAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_talleresInicioAdminActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_talleresInicioAdminActionPerformed
+
+    private void registrarAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registrarAdminActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_registrarAdminActionPerformed
+
+    private void verReportesInicioAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verReportesInicioAdminActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_verReportesInicioAdminActionPerformed
+
+    private void verClientesAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verClientesAdminActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_verClientesAdminActionPerformed
+
+    private void cerrarSesiónAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cerrarSesiónAdminActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cerrarSesiónAdminActionPerformed
+
+    private void buttonGimnasiosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonGimnasiosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonGimnasiosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -892,6 +587,18 @@ public class MenuAdministrador extends javax.swing.JFrame {
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -902,28 +609,28 @@ public class MenuAdministrador extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton ActualizarMembresiaAdmin;
-    private javax.swing.JPanel PanelAdministradores;
-    private javax.swing.JPanel PanelCiudades;
-    private javax.swing.JPanel PanelDistritos;
-    private javax.swing.JPanel PanelGimnasios;
-    private javax.swing.JPanel PanelMembresiaAdmin;
-    private javax.swing.JPanel PanelTalleresAdmin;
-    private javax.swing.JPanel PanelVerClientes;
-    private javax.swing.JPanel ParentPanel;
-    private javax.swing.JButton VerMembresiasAdmin;
-    private javax.swing.JButton buttonGestionarGimnasioAdmin;
-    private javax.swing.JButton buttonGestionarMembresíasAdmin;
-    private javax.swing.JButton buttonMostrarUsuarios;
-    private javax.swing.JButton buttonRegistraGimnasio;
-    private javax.swing.JButton buttonRegistrarAdmin;
-    private javax.swing.JButton buttonRegistrarCiudad;
-    private javax.swing.JButton buttonRegistrarDistrito;
-    private javax.swing.JButton buttonTalleresAdmin;
-    private javax.swing.JComboBox<String> comboDistritoCiudades;
-    private javax.swing.JComboBox<String> comboGimnasiosCiudades;
-    private javax.swing.JComboBox<String> comboGimnasiosDistritos;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JTabbedPane AdminPanel;
+    private javax.swing.JPanel GestionMembresiasPanel;
+    private javax.swing.JButton GestionarMembresiasInicio;
+    private javax.swing.JPanel GimnasiosPanel;
+    private javax.swing.JButton InicioAdmin;
+    private javax.swing.JPanel InicioPanel;
+    private javax.swing.JButton buttonActulizarMembresia;
+    private javax.swing.JButton buttonBuscar;
+    private javax.swing.JButton buttonCiudades;
+    private javax.swing.JButton buttonDistritos;
+    private javax.swing.JButton buttonGimnasios;
+    private javax.swing.JButton buttonServicios;
+    private javax.swing.JButton cerrarSesiónAdmin;
+    private javax.swing.JComboBox<String> elegirMembresía;
+    private javax.swing.JButton gimnasiosInicioAdmin;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -938,18 +645,13 @@ public class MenuAdministrador extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -961,27 +663,20 @@ public class MenuAdministrador extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JScrollPane jScrollPane6;
-    private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea2;
-    private javax.swing.JButton logOutAdmin;
-    private javax.swing.JButton logOutAdmin1;
-    private javax.swing.JPanel panelActualizarMembresia;
-    private javax.swing.JPanel panelVerMembresia;
-    private javax.swing.JTextArea precioMembDiamanteAdmin;
-    private javax.swing.JTextArea precioMembEsmeraldaAdmin;
-    private javax.swing.JTextArea precioMembZafiroAdmin;
-    private javax.swing.JTextField txtGimnasioDireccion;
-    private javax.swing.JTextArea txtGimnasioReferencia;
-    private javax.swing.JTextField txtNombreCiudad;
-    private javax.swing.JTextField txtNombreDistrito;
+    private javax.swing.JPasswordField passwordAdmin;
+    private javax.swing.JButton registrarAdmin;
+    private javax.swing.JPanel registrarAdminPanel;
+    private javax.swing.JPanel reportesPanel;
+    private javax.swing.JButton talleresInicioAdmin;
+    private javax.swing.JPanel talleresPanel;
+    private javax.swing.JTextField txtCorreoAdmin;
+    private javax.swing.JTextField txtPrecioMembresia;
+    private javax.swing.JButton verClientesAdmin;
+    private javax.swing.JPanel verClientesPanel;
+    private javax.swing.JButton verReportesInicioAdmin;
     // End of variables declaration//GEN-END:variables
 }

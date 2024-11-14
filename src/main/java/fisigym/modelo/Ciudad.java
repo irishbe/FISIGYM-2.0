@@ -29,7 +29,7 @@ public class Ciudad {
         this.nombre = nombre;
     }
     
-    public boolean getCiudadActiva(){
+    public boolean isCiudadActiva(){
         return ciudadActiva;
     }
     
