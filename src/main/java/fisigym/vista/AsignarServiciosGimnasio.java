@@ -87,6 +87,8 @@ public class AsignarServiciosGimnasio extends javax.swing.JFrame {
         elegirGimnasioServicios.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Gimnasio 1", "Gimnasio 2", "Gimnasio 3", "Gimnasio 4" }));
         jPanel2.add(elegirGimnasioServicios, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 170, 250, -1));
 
+        buttonVolver.setBackground(new java.awt.Color(204, 204, 255));
+        buttonVolver.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         buttonVolver.setText("Volver");
         jPanel2.add(buttonVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 40, -1, -1));
 
@@ -110,9 +112,16 @@ public class AsignarServiciosGimnasio extends javax.swing.JFrame {
             Class[] types = new Class [] {
                 java.lang.String.class, java.lang.Boolean.class
             };
+            boolean[] canEdit = new boolean [] {
+                false, true
+            };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
             }
         });
         tablaAsignarServicios.getTableHeader().setReorderingAllowed(false);

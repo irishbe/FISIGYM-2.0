@@ -65,7 +65,7 @@ public class RealizarPago extends javax.swing.JFrame {
 
         jLabel4.setText("Medio de Pago:");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tarjeta de crédito", "Tarjeta de débito" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Visa", "MasterdCard" }));
 
         jLabel5.setText("Número de tarjeta:");
 

@@ -37,7 +37,7 @@ public class gestionarDistritos extends javax.swing.JFrame {
         buttonVolver = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tablaDistritos = new javax.swing.JTable();
         buttonGuardar = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -85,7 +85,7 @@ public class gestionarDistritos extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(219, 217, 232));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tablaDistritos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -96,16 +96,23 @@ public class gestionarDistritos extends javax.swing.JFrame {
             Class[] types = new Class [] {
                 java.lang.String.class, java.lang.String.class
             };
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
         });
-        jTable1.getTableHeader().setReorderingAllowed(false);
-        jScrollPane1.setViewportView(jTable1);
-        if (jTable1.getColumnModel().getColumnCount() > 0) {
-            jTable1.getColumnModel().getColumn(0).setResizable(false);
-            jTable1.getColumnModel().getColumn(1).setResizable(false);
+        tablaDistritos.getTableHeader().setReorderingAllowed(false);
+        jScrollPane1.setViewportView(tablaDistritos);
+        if (tablaDistritos.getColumnModel().getColumnCount() > 0) {
+            tablaDistritos.getColumnModel().getColumn(0).setResizable(false);
+            tablaDistritos.getColumnModel().getColumn(1).setResizable(false);
         }
 
         jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 80, 490, 290));
@@ -213,7 +220,7 @@ public class gestionarDistritos extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable tablaDistritos;
     private javax.swing.JTextField txtBuscarCiudad;
     private javax.swing.JTextField txtDistrito;
     // End of variables declaration//GEN-END:variables

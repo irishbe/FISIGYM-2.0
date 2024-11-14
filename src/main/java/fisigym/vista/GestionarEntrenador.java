@@ -49,7 +49,7 @@ public class GestionarEntrenador extends javax.swing.JFrame {
         buttonAsignarDisciplia = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tablaEntrenadores = new javax.swing.JTable();
         jPanel4 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         txtBuscarRuc = new javax.swing.JTextField();
@@ -149,7 +149,7 @@ public class GestionarEntrenador extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(219, 217, 232));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tablaEntrenadores.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -160,12 +160,19 @@ public class GestionarEntrenador extends javax.swing.JFrame {
             Class[] types = new Class [] {
                 java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class
             };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false
+            };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
         });
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tablaEntrenadores);
 
         jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 1080, 310));
 
@@ -281,7 +288,7 @@ public class GestionarEntrenador extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable tablaEntrenadores;
     private javax.swing.JTextArea textAreaBiografiaEntrenador;
     private javax.swing.JTextField txtApellidoEntrenador;
     private javax.swing.JTextField txtBuscarRuc;
