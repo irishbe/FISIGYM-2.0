@@ -41,6 +41,26 @@ public class SistemaAdmin extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
+        GimnasiosPanel = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        buttonGimnasios = new javax.swing.JButton();
+        buttonDistritos = new javax.swing.JButton();
+        buttonCiudades = new javax.swing.JButton();
+        buttonServicios = new javax.swing.JButton();
+        talleresPanel = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         GestionMembresiasPanel = new javax.swing.JPanel();
         jPanel10 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
@@ -61,33 +81,20 @@ public class SistemaAdmin extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         buttonBuscar = new javax.swing.JButton();
         buttonActulizarMembresia = new javax.swing.JButton();
-        GimnasiosPanel = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        buttonGimnasios = new javax.swing.JButton();
-        buttonDistritos = new javax.swing.JButton();
-        buttonCiudades = new javax.swing.JButton();
-        buttonServicios = new javax.swing.JButton();
-        talleresPanel = new javax.swing.JPanel();
         registrarAdminPanel = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
+        txtCorreoAdmin = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
-        jButton16 = new javax.swing.JButton();
-        reportesPanel = new javax.swing.JPanel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jButton17 = new javax.swing.JButton();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
+        passwordAdmin = new javax.swing.JPasswordField();
+        jButton5 = new javax.swing.JButton();
         verClientesPanel = new javax.swing.JPanel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jButton18 = new javax.swing.JButton();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel33 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
+        reportesPanel = new javax.swing.JPanel();
+        jButton17 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(800, 500));
@@ -160,7 +167,7 @@ public class SistemaAdmin extends javax.swing.JFrame {
         registrarAdmin.setBackground(new java.awt.Color(189, 197, 200));
         registrarAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
         registrarAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
-        registrarAdmin.setText("Registrar admin");
+        registrarAdmin.setText("Registrar administrador");
         registrarAdmin.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         registrarAdmin.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         registrarAdmin.setIconTextGap(18);
@@ -183,12 +190,12 @@ public class SistemaAdmin extends javax.swing.JFrame {
                 verReportesInicioAdminActionPerformed(evt);
             }
         });
-        jPanel1.add(verReportesInicioAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 343, 186, 34));
+        jPanel1.add(verReportesInicioAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 186, 34));
 
         verClientesAdmin.setBackground(new java.awt.Color(189, 197, 200));
         verClientesAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
         verClientesAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/InicioLogoCliente.png"))); // NOI18N
-        verClientesAdmin.setText("Ver clientes");
+        verClientesAdmin.setText("Clientes");
         verClientesAdmin.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         verClientesAdmin.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         verClientesAdmin.setIconTextGap(18);
@@ -197,7 +204,7 @@ public class SistemaAdmin extends javax.swing.JFrame {
                 verClientesAdminActionPerformed(evt);
             }
         });
-        jPanel1.add(verClientesAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 389, 186, 34));
+        jPanel1.add(verClientesAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 186, 34));
 
         cerrarSesiónAdmin.setBackground(new java.awt.Color(189, 197, 200));
         cerrarSesiónAdmin.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
@@ -256,6 +263,95 @@ public class SistemaAdmin extends javax.swing.JFrame {
         );
 
         AdminPanel.addTab("Inicio", InicioPanel);
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/MembresiaLogoCLien.png"))); // NOI18N
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, -1, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (28).png"))); // NOI18N
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 120, 120));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (29).png"))); // NOI18N
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 150, -1, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (30).png"))); // NOI18N
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 320, -1, -1));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (31).png"))); // NOI18N
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 320, -1, -1));
+
+        buttonGimnasios.setText("Gestionar Gimnasios");
+        buttonGimnasios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonGimnasiosActionPerformed(evt);
+            }
+        });
+        jPanel2.add(buttonGimnasios, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 280, -1, -1));
+
+        buttonDistritos.setText("Gestionar Distritos");
+        jPanel2.add(buttonDistritos, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 460, -1, -1));
+
+        buttonCiudades.setText("Gestionar Ciudades");
+        jPanel2.add(buttonCiudades, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 280, -1, -1));
+
+        buttonServicios.setText("Gestionar Servicios");
+        jPanel2.add(buttonServicios, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 460, -1, -1));
+
+        javax.swing.GroupLayout GimnasiosPanelLayout = new javax.swing.GroupLayout(GimnasiosPanel);
+        GimnasiosPanel.setLayout(GimnasiosPanelLayout);
+        GimnasiosPanelLayout.setHorizontalGroup(
+            GimnasiosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        GimnasiosPanelLayout.setVerticalGroup(
+            GimnasiosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(GimnasiosPanelLayout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        AdminPanel.addTab("Gimnasios", GimnasiosPanel);
+
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (33).png"))); // NOI18N
+        jPanel3.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, -1, -1));
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (35).png"))); // NOI18N
+        jPanel3.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 170, -1, -1));
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (34).png"))); // NOI18N
+        jPanel3.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 330, -1, -1));
+
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (36).png"))); // NOI18N
+        jPanel3.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 50, -1, -1));
+
+        jButton1.setText("Gestionar Talleres");
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, -1, -1));
+
+        jButton2.setText("Gestionar Entrenadores");
+        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 460, -1, -1));
+
+        jButton3.setText("Gestionar Disciplinas");
+        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 290, -1, -1));
+
+        javax.swing.GroupLayout talleresPanelLayout = new javax.swing.GroupLayout(talleresPanel);
+        talleresPanel.setLayout(talleresPanelLayout);
+        talleresPanelLayout.setHorizontalGroup(
+            talleresPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        talleresPanelLayout.setVerticalGroup(
+            talleresPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(talleresPanelLayout.createSequentialGroup()
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        AdminPanel.addTab("Programar talleres", talleresPanel);
 
         jPanel10.setBackground(new java.awt.Color(255, 255, 255));
         jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -342,205 +438,92 @@ public class SistemaAdmin extends javax.swing.JFrame {
 
         AdminPanel.addTab("Gestionar membresías", GestionMembresiasPanel);
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/MembresiaLogoCLien.png"))); // NOI18N
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, -1, -1));
+        jLabel19.setFont(new java.awt.Font("Gill Sans Ultra Bold", 1, 36)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(61, 78, 114));
+        jLabel19.setText("Ingrese sus credenciales");
+        jPanel4.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 80, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (28).png"))); // NOI18N
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 120, 120));
+        jLabel20.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 24)); // NOI18N
+        jLabel20.setText("Correo Electrónico");
+        jPanel4.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, -1, -1));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (29).png"))); // NOI18N
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 150, -1, -1));
+        txtCorreoAdmin.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jPanel4.add(txtCorreoAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 210, 500, -1));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (30).png"))); // NOI18N
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 320, -1, -1));
+        jLabel21.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 24)); // NOI18N
+        jLabel21.setText("Contraseña");
+        jPanel4.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 270, -1, -1));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (31).png"))); // NOI18N
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 320, -1, -1));
+        passwordAdmin.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jPanel4.add(passwordAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 300, 500, -1));
 
-        buttonGimnasios.setText("Gestionar Gimnasios");
-        buttonGimnasios.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonGimnasiosActionPerformed(evt);
-            }
-        });
-        jPanel2.add(buttonGimnasios, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 280, -1, -1));
-
-        buttonDistritos.setText("Gestionar Distritos");
-        jPanel2.add(buttonDistritos, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 460, -1, -1));
-
-        buttonCiudades.setText("Gestionar Ciudades");
-        jPanel2.add(buttonCiudades, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 280, -1, -1));
-
-        buttonServicios.setText("Gestionar Servicios");
-        jPanel2.add(buttonServicios, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 460, -1, -1));
-
-        javax.swing.GroupLayout GimnasiosPanelLayout = new javax.swing.GroupLayout(GimnasiosPanel);
-        GimnasiosPanel.setLayout(GimnasiosPanelLayout);
-        GimnasiosPanelLayout.setHorizontalGroup(
-            GimnasiosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        GimnasiosPanelLayout.setVerticalGroup(
-            GimnasiosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(GimnasiosPanelLayout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        AdminPanel.addTab("Gimnasios", GimnasiosPanel);
-
-        javax.swing.GroupLayout talleresPanelLayout = new javax.swing.GroupLayout(talleresPanel);
-        talleresPanel.setLayout(talleresPanelLayout);
-        talleresPanelLayout.setHorizontalGroup(
-            talleresPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 860, Short.MAX_VALUE)
-        );
-        talleresPanelLayout.setVerticalGroup(
-            talleresPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 555, Short.MAX_VALUE)
-        );
-
-        AdminPanel.addTab("Programar talleres", talleresPanel);
-
-        jLabel19.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
-        jLabel19.setText("Registrar emntrenador");
-
-        jLabel20.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel20.setText("* Cambiar opciones de entrenador");
-
-        jLabel21.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel21.setText("* Ver informacion de los entrenadores");
-
-        jButton16.setText("Continuar");
+        jButton5.setBackground(new java.awt.Color(229, 136, 150));
+        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
+        jButton5.setText("Acceder");
+        jPanel4.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 390, -1, -1));
 
         javax.swing.GroupLayout registrarAdminPanelLayout = new javax.swing.GroupLayout(registrarAdminPanel);
         registrarAdminPanel.setLayout(registrarAdminPanelLayout);
         registrarAdminPanelLayout.setHorizontalGroup(
             registrarAdminPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(registrarAdminPanelLayout.createSequentialGroup()
-                .addGroup(registrarAdminPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(registrarAdminPanelLayout.createSequentialGroup()
-                        .addGap(96, 96, 96)
-                        .addComponent(jLabel19))
-                    .addGroup(registrarAdminPanelLayout.createSequentialGroup()
-                        .addGap(79, 79, 79)
-                        .addGroup(registrarAdminPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel21)
-                            .addComponent(jLabel20)))
-                    .addGroup(registrarAdminPanelLayout.createSequentialGroup()
-                        .addGap(247, 247, 247)
-                        .addComponent(jButton16)))
-                .addContainerGap(405, Short.MAX_VALUE))
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         registrarAdminPanelLayout.setVerticalGroup(
             registrarAdminPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(registrarAdminPanelLayout.createSequentialGroup()
-                .addGap(56, 56, 56)
-                .addComponent(jLabel19)
-                .addGap(66, 66, 66)
-                .addComponent(jLabel20)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel21)
-                .addGap(94, 94, 94)
-                .addComponent(jButton16)
-                .addContainerGap(209, Short.MAX_VALUE))
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        AdminPanel.addTab("Registrar entrenador", registrarAdminPanel);
+        AdminPanel.addTab("Registrar administrador", registrarAdminPanel);
 
-        jLabel22.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
-        jLabel22.setText("Ver reportes");
+        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel23.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel23.setText("* Reporte de entrenadores");
+        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/New Project (39).png"))); // NOI18N
+        jPanel5.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 80, -1, -1));
 
-        jButton17.setText("Continuar");
-
-        jLabel27.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel27.setText("* Reporte de sedes");
-
-        jLabel28.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel28.setText("* Reporte de disciplinas mas solicitadas");
-
-        javax.swing.GroupLayout reportesPanelLayout = new javax.swing.GroupLayout(reportesPanel);
-        reportesPanel.setLayout(reportesPanelLayout);
-        reportesPanelLayout.setHorizontalGroup(
-            reportesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(reportesPanelLayout.createSequentialGroup()
-                .addGroup(reportesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(reportesPanelLayout.createSequentialGroup()
-                        .addGap(247, 247, 247)
-                        .addComponent(jButton17))
-                    .addGroup(reportesPanelLayout.createSequentialGroup()
-                        .addGap(165, 165, 165)
-                        .addComponent(jLabel22))
-                    .addGroup(reportesPanelLayout.createSequentialGroup()
-                        .addGap(79, 79, 79)
-                        .addGroup(reportesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel27)
-                            .addComponent(jLabel23)
-                            .addComponent(jLabel28))))
-                .addContainerGap(459, Short.MAX_VALUE))
-        );
-        reportesPanelLayout.setVerticalGroup(
-            reportesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(reportesPanelLayout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(jLabel22)
-                .addGap(72, 72, 72)
-                .addComponent(jLabel23)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel27)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel28)
-                .addGap(58, 58, 58)
-                .addComponent(jButton17)
-                .addContainerGap(209, Short.MAX_VALUE))
-        );
-
-        AdminPanel.addTab("Ver reportes", reportesPanel);
-
-        jLabel25.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
-        jLabel25.setText("Ver clientes");
-
-        jLabel26.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel26.setText("* Ver informacion de clientes");
-
-        jButton18.setText("Continuar");
+        jButton6.setBackground(new java.awt.Color(229, 136, 150));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
+        jButton6.setText("Gestionar Clientes");
+        jPanel5.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 360, -1, -1));
 
         javax.swing.GroupLayout verClientesPanelLayout = new javax.swing.GroupLayout(verClientesPanel);
         verClientesPanel.setLayout(verClientesPanelLayout);
         verClientesPanelLayout.setHorizontalGroup(
             verClientesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(verClientesPanelLayout.createSequentialGroup()
-                .addGroup(verClientesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(verClientesPanelLayout.createSequentialGroup()
-                        .addGap(79, 79, 79)
-                        .addComponent(jLabel26))
-                    .addGroup(verClientesPanelLayout.createSequentialGroup()
-                        .addGap(247, 247, 247)
-                        .addComponent(jButton18))
-                    .addGroup(verClientesPanelLayout.createSequentialGroup()
-                        .addGap(169, 169, 169)
-                        .addComponent(jLabel25)))
-                .addContainerGap(502, Short.MAX_VALUE))
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         verClientesPanelLayout.setVerticalGroup(
             verClientesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(verClientesPanelLayout.createSequentialGroup()
-                .addGap(57, 57, 57)
-                .addComponent(jLabel25)
-                .addGap(65, 65, 65)
-                .addComponent(jLabel26)
-                .addGap(130, 130, 130)
-                .addComponent(jButton18)
-                .addContainerGap(209, Short.MAX_VALUE))
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        AdminPanel.addTab("Ver clientes", verClientesPanel);
+        AdminPanel.addTab("Clientes", verClientesPanel);
+
+        jButton17.setText("Continuar");
+
+        javax.swing.GroupLayout reportesPanelLayout = new javax.swing.GroupLayout(reportesPanel);
+        reportesPanel.setLayout(reportesPanelLayout);
+        reportesPanelLayout.setHorizontalGroup(
+            reportesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, reportesPanelLayout.createSequentialGroup()
+                .addContainerGap(425, Short.MAX_VALUE)
+                .addComponent(jButton17)
+                .addGap(354, 354, 354))
+        );
+        reportesPanelLayout.setVerticalGroup(
+            reportesPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, reportesPanelLayout.createSequentialGroup()
+                .addContainerGap(356, Short.MAX_VALUE)
+                .addComponent(jButton17)
+                .addGap(176, 176, 176))
+        );
+
+        AdminPanel.addTab("Ver reportes", reportesPanel);
 
         getContentPane().add(AdminPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 0, 860, 590));
 
@@ -637,10 +620,13 @@ public class SistemaAdmin extends javax.swing.JFrame {
     private javax.swing.JButton cerrarSesiónAdmin;
     private javax.swing.JComboBox<String> elegirMembresía;
     private javax.swing.JButton gimnasiosInicioAdmin;
-    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -648,21 +634,20 @@ public class SistemaAdmin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -673,13 +658,18 @@ public class SistemaAdmin extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JPasswordField passwordAdmin;
     private javax.swing.JButton registrarAdmin;
     private javax.swing.JPanel registrarAdminPanel;
     private javax.swing.JPanel reportesPanel;
     private javax.swing.JButton talleresInicioAdmin;
     private javax.swing.JPanel talleresPanel;
+    private javax.swing.JTextField txtCorreoAdmin;
     private javax.swing.JTextField txtPrecioMembresia;
     private javax.swing.JButton verClientesAdmin;
     private javax.swing.JPanel verClientesPanel;
