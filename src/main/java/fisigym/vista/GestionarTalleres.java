@@ -46,7 +46,23 @@ public class GestionarTalleres extends javax.swing.JFrame {
         jTextField2 = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         jComboBox7 = new javax.swing.JComboBox<>();
+        jLabel10 = new javax.swing.JLabel();
+        jComboBox8 = new javax.swing.JComboBox<>();
+        jLabel11 = new javax.swing.JLabel();
+        jComboBox9 = new javax.swing.JComboBox<>();
+        jLabel12 = new javax.swing.JLabel();
+        jComboBox10 = new javax.swing.JComboBox<>();
         jPanel3 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+        jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -54,26 +70,41 @@ public class GestionarTalleres extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(61, 78, 114));
+        jPanel2.setForeground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Disciplina:");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 20, -1, -1));
 
+        jLabel2.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Nivel:");
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, -1, -1));
 
+        jLabel3.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Entrenador:");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, -1, -1));
 
+        jLabel4.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Gimnasio");
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, -1, -1));
 
+        jLabel5.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Ciudad:");
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, -1, -1));
 
+        jLabel6.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Distrito:");
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, -1, -1));
 
+        jLabel7.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Zona:");
         jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 20, -1, -1));
 
@@ -98,23 +129,133 @@ public class GestionarTalleres extends javax.swing.JFrame {
         jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jPanel2.add(jComboBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 160, 190, -1));
 
+        jLabel8.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Aforo");
         jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 80, -1, -1));
 
         jTextField2.setText("jTextField2");
         jPanel2.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 100, 190, -1));
 
-        jLabel9.setText("Día:");
+        jLabel9.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("Frecuencia");
         jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 140, -1, -1));
 
-        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "L-V", "L-M-V", "M-J-S", "Sábado" }));
+        jComboBox7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox7ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jComboBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 160, 190, -1));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 220));
+        jLabel10.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("Hora de inicio:");
+        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 20, -1, -1));
+
+        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "8:00 a.m.", "9:00 a.m.", "10:00 a.m.", "11:00 a.m.", "12:00 p.m.", "13:00 p.m." }));
+        jPanel2.add(jComboBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 40, 170, -1));
+
+        jLabel11.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("Hora de término:");
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 80, -1, -1));
+
+        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "8:00 a.m.", "9:00 a.m.", "10:00 a.m.", "11:00 a.m.", "12:00 p.m.", "13:00 p.m." }));
+        jPanel2.add(jComboBox9, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 100, 170, -1));
+
+        jLabel12.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("Taller especial:");
+        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 140, -1, -1));
+
+        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Sí", "No" }));
+        jPanel2.add(jComboBox10, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 160, 170, -1));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 200));
 
         jPanel3.setBackground(new java.awt.Color(219, 217, 232));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 1100, 370));
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Nombre", "Entrenador", "Gimnasio", "Zona", "Frecuencia", "Hora Inicio", "Hora Fin", "Taller Especial"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Boolean.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, true, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(jTable1);
+
+        jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 1030, 290));
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/GuardarTodo.png"))); // NOI18N
+        jButton1.setText("Grabar");
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 10, -1, -1));
+
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/nuevo.png"))); // NOI18N
+        jButton2.setText("Nuevo");
+        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 10, -1, -1));
+
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/Actualizar (2).png"))); // NOI18N
+        jButton3.setText("Editar");
+        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 10, -1, -1));
+
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fisigym/imagenes/eliminar.png"))); // NOI18N
+        jButton4.setText("Eliminar");
+        jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 10, -1, -1));
+
+        jPanel4.setBackground(new java.awt.Color(248, 231, 248));
+
+        jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel13.setText("Buscar Gimnasio:");
+
+        jButton5.setText("Buscar");
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(8, 8, 8)
+                .addComponent(jLabel13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 348, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addComponent(jButton5)
+                .addContainerGap(12, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap(11, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton5))
+                .addContainerGap())
+        );
+
+        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, 570, 40));
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 1100, 390));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -133,6 +274,10 @@ public class GestionarTalleres extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jComboBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox7ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -170,14 +315,26 @@ public class GestionarTalleres extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox10;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JComboBox<String> jComboBox4;
     private javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JComboBox<String> jComboBox7;
+    private javax.swing.JComboBox<String> jComboBox8;
+    private javax.swing.JComboBox<String> jComboBox9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -189,7 +346,11 @@ public class GestionarTalleres extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }

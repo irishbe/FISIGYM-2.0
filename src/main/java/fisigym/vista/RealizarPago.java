@@ -61,6 +61,7 @@ public class RealizarPago extends javax.swing.JFrame {
         jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
+        jTextArea1.setEnabled(false);
         jScrollPane1.setViewportView(jTextArea1);
 
         jLabel4.setText("Medio de Pago:");
